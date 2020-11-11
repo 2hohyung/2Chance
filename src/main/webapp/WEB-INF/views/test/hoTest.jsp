@@ -35,7 +35,8 @@
 </head>
 
 <body>
-	<h1><a href="/test/hoTest2">다음기능</a></h1>
+	<h1><a href="/test/hoTest2">QuickMenu</a></h1>
+	<h1><a href="/test/hoTest3">LikeFill</a></h1>
 	
 	<div id="content">
 		<div id="bigImages">
