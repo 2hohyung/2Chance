@@ -120,7 +120,7 @@
 		</div>
 		<div class="offcanvas__logo">
 			<a href="./index.html"><img
-				src="/resources/testimg/temlogo.png" alt=""></a>
+				src="/resources/cake/img/icon/2cc.jpg" alt=""></a>
 		</div>
 		<div id="mobile-menu-wrap"></div>
 		<div class="offcanvas__option">
@@ -142,7 +142,7 @@
 
 							<div class="header__logo">
 								<a href="/main/main"><img
-									src="/resources/testimg/temlogo.png" alt="홈으로"></a>
+									src="/resources/cake/img/icon/2cc.jpg" alt="홈으로"></a>
 							</div>
 							<div class="header__top__right">
 								<div class="header__top__right__links">
@@ -685,7 +685,7 @@
 			<li class="quickmenu">
 				<h3>
 					<span class="top_btn"><img
-						src="/resources/testimg/quickmenu.PNG"
+						src="https://cdn.imweb.me/upload/S201905285cec8cdf420ec/1b884cf4e9bfa.png"
 						alt="#" style="width: 90px;"></span>
 				</h3>
 				<ul class="quick_2">
