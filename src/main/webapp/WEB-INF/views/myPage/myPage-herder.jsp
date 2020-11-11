@@ -13,7 +13,7 @@ a{
 }
 /* Hero Unit ----------------------*/
 .hero-unit {
-  height: 640px;
+  height: 300px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -26,7 +26,7 @@ a{
 .hero-unit h6 {
   margin-top: -0.5rem;
   margin-bottom: 0;
-  color: white;
+  color: black;
 }
 .hero-unit h1 {
   font-weight: bold;
@@ -44,7 +44,7 @@ a{
   margin: 2rem auto;
 }
 .hero-unit .clients a {
-  color: white;
+  color: block;
 }
 .clients .fa-stack-2x {
   color: gray;
@@ -154,9 +154,13 @@ a{
   -o-transition: -o-transform 0.6s;
   transition: transform 0.6s;
   display: block;
-  position: absolute;
   width: 100%;
+  position: absolute;
   text-align: center;
+}
+.card-front{
+	height: 100%;
+
 }
 
 /* css의 기능을 훼손하지 않고 왼근법을 나타내주기 위해서 필요한 기능.*/
@@ -180,7 +184,7 @@ a{
 }
 
 .card-back p{
-	line-height: 40%;
+	line-height: 150%;
 }
 
 /* Button Card Colors */
@@ -195,52 +199,61 @@ a{
   color: white;
 }
 
+/* herder/footer 의 무분별한 접근 방지를 위한 row 설정*/
+#myPageRow {
+    display: block;
+    -ms-flex-wrap: none;
+    flex-wrap: none;
+    margin-right: -15px;
+    margin-left: 15px;
+}
+
 /* First button color */
 .flip-cards li:first-child > .button {
-  background-color: rgba(40, 57, 77, 0.8);
+  background-color: rgba(240, 134, 50, 0.8);
 }
 .flip-cards li:first-child > .panel {
-  background-color: rgba(40, 57, 77, 1);
+  background-color: rgba(240, 134, 50, 1);
 }
 
 /* Second button color */
 .flip-cards li:nth-child(2) > .button {
-  background-color: rgba(109, 193, 202, 0.8);
+  background-color: rgba(17, 17, 17, 0.8);
 }
 .flip-cards li:nth-child(2) > .panel {
-  background-color: rgba(109, 193, 202, 1);
+  background-color: rgba(17, 17, 17, 1);
 }
 
 /* Third button color */
 .flip-cards li:nth-child(3) > .button {
-  background-color: rgba(211, 81, 45, 0.8);
+  background-color: rgba(240, 134, 50, 0.8);
 }
 .flip-cards li:nth-child(3) > .panel {
-  background-color: rgba(211, 81, 45, 1);
+  background-color: rgba(240, 134, 50, 1);
 }
 
 /* Fourth button color */
 .flip-cards li:nth-child(4) > .button {
-  background-color: rgba(235, 167, 36, 0.8);
+  background-color: rgba(17, 17, 17, 0.8);
 }
 .flip-cards li:nth-child(4) > .panel {
-  background-color: rgba(235, 167, 36, 1);
+  background-color: rgba(17, 17, 17, 1);
 }
 
 /* Fifth button color */
 .flip-cards li:nth-child(5) > .button {
-  background-color: rgba(75, 135, 150, 0.8);
+  background-color: rgba(240, 134, 50, 0.8);
 }
 .flip-cards li:nth-child(5) > .panel {
-  background-color: rgba(75, 135, 150, 1);
+  background-color: rgba(240, 134, 50, 1);
 }
 
 /* Sixth (last) button color */
 .flip-cards li:last-child > .button {
-  background-color: rgba(100, 66, 87, 0.8);
+  background-color: rgba(17, 17, 17, 0.8);
 }
 .flip-cards li:last-child > .panel {
-  background-color: rgba(100, 66, 87, 1);
+  background-color: rgba(17, 17, 17, 1);
   color: white;
 }
 
@@ -309,7 +322,7 @@ a{
   <!-- Hero Unit -->
   <section class="hero-unit">
   
-    <div class="row">
+    <div id = "myPageRow" class="row">
       <div class="large-12 columns">
         <hgroup>
           <h1>마이페이지</h1>
@@ -324,6 +337,7 @@ a{
             </div>
             <div class="panel card-back">
               <div class="hub-info">
+              	<br>
                 <p class = "text-center"><a href = "#">입찰목록</a></p>
                 <p class = "text-center"><a href = "#">유찰목록</a></p>
               </div>
@@ -337,6 +351,7 @@ a{
   
             <div class="panel card-back">
               <div class="hub-info">
+             	<br>
                 <p class = "text-center"><a href="#">구매 목록</a></p>
                 <p class = "text-center"><a href="#">미결제 목록</a></p>
               </div>
@@ -350,6 +365,7 @@ a{
   
             <div class="panel card-back">
               <div class="hub-info">
+              	<br>
                 <p class = "text-center"><a href="#">포인트 사용내역</a></p>
                 <p class = "text-center"><a href="#">포인트 충전</a></p>
                 <p class = "text-center"><a href="#">포인트 환전</a></p>
@@ -364,6 +380,7 @@ a{
   
             <div class="panel card-back">
               <div class="hub-info">
+              	<br>
                 <p class = "text-center"><a href="#">회원 정보 수정.</a></p>
                 <p class = "text-center"><a href="#">회원 탈퇴</a></p>
               </div>
@@ -377,6 +394,7 @@ a{
   
             <div class="panel card-back">
               <div class="hub-info">
+              	<br>
                 <p><a href="#">공지사항</a></p>
                 <p><a href="#">FAQ</a></p>
                 <p><a href="#">이용안내</a></p>
