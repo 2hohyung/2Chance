@@ -15,6 +15,7 @@
 			
 			<!-- <security:csrf disabled="true"/> -->
 			
+			<!-- 모든멤버접근 / 로그인 한 사용자만 접근 / 관리자만 접근 -->
 			<security:intercept-url pattern="/sample/all" access="permitAll" />
 			<security:intercept-url pattern="/sample/member" access="hasRole('ROLE_MEMBER')" />
 			<security:intercept-url pattern="/sample/admin" access="hasRole('ROLE_ADMIN')" />
