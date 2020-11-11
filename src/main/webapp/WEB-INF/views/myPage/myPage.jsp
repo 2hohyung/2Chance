@@ -8,12 +8,12 @@
 a:hover {
   text-decoration: underline;
 }
-
+a{
+	  text-decoration:none
+}
 /* Hero Unit ----------------------*/
 .hero-unit {
   height: 640px;
-  background: url(https://static.pexels.com/photos/2884/building-vintage-bike-monument.jpg) no-repeat center center;
-  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -34,10 +34,10 @@ a:hover {
 .hero-unit hgroup {
   margin: 3rem 0;
 }
-.hero-unit .card-icon { /* front of card */
+.hero-unit{ /* front of card */
   display: block;
+  font-size: 1rem;
   margin: 0.5rem auto 0;
-  font-size: 2rem;
   color: white;
 }
 .hero-unit .clients {
@@ -73,8 +73,9 @@ a:hover {
 .panel a, 
 .panel p, 
 .panel small {
-  width: 80%;
+  width: 100%;
   float: right;
+  text-align: center;
 }
 .panel a {
   margin-bottom: 0.5rem;
@@ -100,15 +101,18 @@ a:hover {
 .flip-cards li {
   float: left;
   width: 33.3%;
-  height: 180px;
+  height: 37px;
   position: relative;
   padding: 0;
+
 }
 
+/* 회전 액팅이 일어나기 위한 조건.*/
 .flip-cards li:hover {
   cursor: pointer;
 }
 
+/* 카드 회전을 걸어주는데 필요한 기능. (bootstrap transform  참조.) */
 .flip-cards li:hover .card-front {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -122,6 +126,7 @@ a:hover {
   transform: perspective(1000) rotateY(180deg);
 }
 
+/* 뒤집혀진 카드를 역회전 걸어주는데 필요한 기능 (bootstrap transform 참조.) */
 .flip-cards li:hover .card-back {
   z-index: 950;
   -webkit-transform: rotateY(0deg);
@@ -136,6 +141,7 @@ a:hover {
   transform: perspective(1000) rotateY(0deg);
 }
 
+/* 회전이 걸릴때 front의 글씨와 back의 글씨가 사라지고 나타나는 부분에서 필요한 기능*/
 .flip-cards .card-front,
 .flip-cards .card-back {
   -webkit-backface-visibility: hidden;
@@ -148,11 +154,12 @@ a:hover {
   -o-transition: -o-transform 0.6s;
   transition: transform 0.6s;
   display: block;
-  height: 100%;
   position: absolute;
   width: 100%;
+  text-align: center;
 }
 
+/* css의 기능을 훼손하지 않고 왼근법을 나타내주기 위해서 필요한 기능.*/
 .flip-cards .card-front {
   -webkit-transform: perspective(1000) rotateY(0);
   -moz-transform: perspective(1000) rotateY(0);
@@ -162,6 +169,7 @@ a:hover {
   z-index: 900;
 }
 
+/* 동일하게 회전을 걸어주는데 필요한 기능. */
 .flip-cards .card-back {
   -webkit-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
@@ -169,6 +177,10 @@ a:hover {
   -o-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
   z-index: 800;
+}
+
+.card-back p{
+	line-height: 40%;
 }
 
 /* Button Card Colors */
@@ -266,10 +278,10 @@ a:hover {
 	.hero-unit h3 {
 		font-size: 0.85rem;
 	}
-	.hero-unit .card-icon {
+	.hero-unit{
 		font-size: 1.35rem;
 	}
-	.hero-unit .card-back .card-icon {
+	.hero-unit .card-back{
 		font-size: 2rem;
 		margin: 0;
 		padding: 5px 0 20px 5px;
@@ -300,7 +312,7 @@ a:hover {
     <div class="row">
       <div class="large-12 columns">
         <hgroup>
-          <h1>마이페이지.</h1>
+          <h1>마이페이지</h1>
         </hgroup>
   
   
@@ -309,28 +321,24 @@ a:hover {
           <li ontouchstart="this.classList.toggle('hover');">
             <div class="large button card-front">
               <a href="#">경매내역</a>
-              <i class="fa fa-code card-icon "></i>
             </div>
             <div class="panel card-back">
-              <i class="fa fa-code card-icon"></i>
               <div class="hub-info">
-                <a href="#">입찰목록</a><br>
-                <a href="#">유찰목록</a>
+                <p class = "text-center"><a href = "#">입찰목록</a></p>
+                <p class = "text-center"><a href = "#">유찰목록</a></p>
               </div>
             </div>
           </li>
-  
           <li ontouchstart="this.classList.toggle('hover');">
             <div class="large button card-front">
               <a href="">구매내역</a>
-              <i class="fa fa-pencil-square-o card-icon"></i>
+             
             </div>
   
             <div class="panel card-back">
-              <i class="fa fa-pencil-square-o card-icon"></i>
               <div class="hub-info">
-                <a href="">구매 목록</a>
-                <a href="">미결제 목록</a>
+                <p class = "text-center"><a href="#">구매 목록</a></p>
+                <p class = "text-center"><a href="#">미결제 목록</a></p>
               </div>
             </div>
           </li>
@@ -338,15 +346,13 @@ a:hover {
           <li ontouchstart="this.classList.toggle('hover');">
             <div class="large button card-front">
               <a href="">마이포켓</a>
-              <i class="fa fa-paper-plane-o card-icon"></i>
             </div>
   
             <div class="panel card-back">
-              <i class="fa fa-paper-plane-o card-icon"></i>
               <div class="hub-info">
-                <a href="">포인트 사용내역</a>
-                <a href="">포인트 충전</a>
-                <a href="">포인트 환전</a>
+                <p class = "text-center"><a href="#">포인트 사용내역</a></p>
+                <p class = "text-center"><a href="#">포인트 충전</a></p>
+                <p class = "text-center"><a href="#">포인트 환전</a></p>
               </div>
             </div>
           </li>
@@ -354,14 +360,12 @@ a:hover {
           <li ontouchstart="this.classList.toggle('hover');">
             <div class="large button card-front">
               <a href="">회원정보</a>
-              <i class="fa fa-map-o card-icon"></i>
             </div>
   
             <div class="panel card-back">
-              <i class="fa fa-map-o card-icon"></i>
               <div class="hub-info">
-                <a href="">개인정보 수정</a>
-                <a href="">회원 탈퇴 신청</a>
+                <p class = "text-center"><a href="#">회원 정보 수정.</a></p>
+                <p class = "text-center"><a href="#">회원 탈퇴</a></p>
               </div>
             </div>
           </li>
@@ -369,34 +373,26 @@ a:hover {
           <li ontouchstart="this.classList.toggle('hover');">
             <div class="large button card-front">
               <a href="">고객센터</a>
-              <i class="fa fa-language card-icon"></i>
             </div>
   
             <div class="panel card-back">
-              <i class="fa fa-language card-icon"></i>
               <div class="hub-info">
-                <a href="">공지사항</a>
-                <a href="">FAQ</a>
-                <a href="">이용안내</a>
-                <a href="">1 : 1 문의 게시핀</a>
+                <p><a href="#">공지사항</a></p>
+                <p><a href="#">FAQ</a></p>
+                <p><a href="#">이용안내</a></p>
+                <p><a href="#">1 : 1 문의 게시핀</a></p>
               </div>
-              <small class="clear">Updated MWF.</small>
             </div>
           </li>
   
           <li ontouchstart="this.classList.toggle('hover');">
             <div class="large button card-front">
               <a href="">내정보</a>
-              <i class="fa fa-users card-icon"></i>
             </div>
   
             <div class="panel card-back">
-              <i class="fa fa-users card-icon"></i>
               <div class="hub-info">
-                <a href="">AICFChurch.org</a>
-                <p>Listen to sermon podcasts or download church graphic design resources.</p>
               </div>
-              <small class="clear">Updated the 4th Sunday.</small>
             </div>
           </li>
   

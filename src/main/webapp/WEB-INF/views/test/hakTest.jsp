@@ -15,7 +15,7 @@
 
 <div class="row">
    <div class="col-lg-12">
-   	<button class = "/myPageBtn">MyPageBtn</button>
+   	<button class = "myPageBtn">MyPageBtn</button>
    </div>
 </div>
 
