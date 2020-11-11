@@ -95,7 +95,7 @@
 
 							<div class="header__logo">
 								<a href="/main/main"><img
-									src="/resources/cake/img/icon/2cc.jpg" alt="홈으로"></a>
+									src="/resources/cake/img/icon/temlogo.png" alt="홈으로"></a>
 							</div>
 							<div class="header__top__right">
 								<div class="header__top__right__links">

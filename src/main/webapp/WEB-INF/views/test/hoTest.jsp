@@ -30,13 +30,13 @@
 		height:100px;
 	}
 </style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> -->
 </head>
 
 <body>
 	<h1><a href="/test/hoTest2">QuickMenu</a></h1>
-	<h1><a href="/test/hoTest3">LikeFill</a></h1>
+	<!-- <h1><a href="/test/hoTest3">LikeFill</a></h1> -->
 	
 	<div id="content">
 		<div id="bigImages">

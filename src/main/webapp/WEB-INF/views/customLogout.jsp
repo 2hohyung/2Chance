@@ -95,7 +95,7 @@
 
 							<div class="header__logo">
 								<a href="/main/main"><img
-									src="/resources/cake/img/icon/2cc.jpg" alt="홈으로"></a>
+									src="/resources/cake/img/icon/temlogo.png" alt="홈으로"></a>
 							</div>
 							<div class="header__top__right">
 								<div class="header__top__right__links">
@@ -165,11 +165,11 @@
                     <div class="panel-body">
                         <form role="form" method='post' action="/customLogout">
                         <input type="hidden" name="${_csrf.parameterName }" value="${_csrf.token }" />
+                            
                             <fieldset>
                                 <!-- Change this to a button or input when using this as a form -->
                                 <a href="index.html" class="btn btn-lg btn-success btn-block">Logout</a>
                             </fieldset>
-                            
                         </form>
                     </div>
                 </div>
@@ -240,6 +240,7 @@
     		/* location.href="/main/main"; */
     	
     	});
+		
     </script>
     <c:if test="${param.logout != null }">
     	<script>
