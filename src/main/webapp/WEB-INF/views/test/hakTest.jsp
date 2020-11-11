@@ -15,14 +15,14 @@
 
 <div class="row">
    <div class="col-lg-12">
-   	<button class = "inquiryBtn">inquiryBtn</button>
+   	<button class = "myPageBtn">myPageBtn</button>
    </div>
 </div>
 
 <script>
 	$(document).ready(function(){
-		$(".inquiryBtn").on("click", function(e){
-			self.location = "/customerService/inquiry";
+		$(".myPageBtn").on("click", function(e){
+			self.location = "/myPage/myPage";
 		});
 	});
 </script>

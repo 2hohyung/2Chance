@@ -19,7 +19,7 @@ public class MainController {
 
 	private BoardService service;
 
-	@GetMapping("/main")
+	@GetMapping("main")
 	public void main(Criteria cri, Model model) {
 		
 		log.info("list" + cri);
