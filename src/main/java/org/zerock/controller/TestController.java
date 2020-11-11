@@ -28,5 +28,10 @@ public class TestController {
 	public void hoTest() {
 		
 	}
+	
+	@GetMapping("hoTest2")
+	public void hoTest2() {
+		
+	}
 	//test
 }
