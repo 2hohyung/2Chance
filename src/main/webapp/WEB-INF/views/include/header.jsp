@@ -155,77 +155,6 @@
 	</header>
 	<!-- Header Section End -->
 	
-<!--  login section start -->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-md-offset-4">
-				<div class="login-panel panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title" style="font-weight: 900;">Who's next? 2-Chance</h3>
-					</div>
-					<div class="panel-body">
-						<form role="form" method='post' action="/login">
-							<fieldset>
-								<div class="form-group">
-									<input class="form-control" placeholder="user id"
-										name="username" type="text" autofocus>
-								</div>
-								<div class="form-group">
-									<input class="form-control" placeholder="Password"
-										name="password" type="password" value="">
-								</div>
-								<div class="checkbox">
-									<label><input name="remember-me" type="checkbox">remember id</label>
-								</div>
-								<!-- Change this to a button or input when using this as a form -->
-								<a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
-								<br>
-								<p>Do you want to join now?</p>
-								<a href="index.html" class="btn btn-lg btn-success btn-block">Join
-									us</a>
-							</fieldset>
-							
-							<input type="hidden" name="${_csrf.parameterName }"
-								value="${_csrf.token }" />
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-			<br>
-			<br>
-			<br>
-	
-	<!-- login section end -->
-	
-	<!-- Footer Section Begin -->
-	<footer class="footer set-bg"
-		data-setbg="/resources/cake/img/footer-bg.jpg">
-
-		<div class="copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7">
-						<p class="copyright__text text-white">
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;
-							<script>
-								document.write(new Date().getFullYear());
-							</script>
-							All rights reserved |Who's next? 2-Chance <i
-								class="fa fa-heart" aria-hidden="true"></i> by <a
-								href="https://colorlib.com" target="_blank">hhhyyj</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>
-					</div>
-					<div class="col-lg-5"></div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- Footer Section End -->
-	
 		<!-- Cake Js Plugins start -->
 	<script src="/resources/cake/js/jquery-3.3.1.min.js"></script>
 	<script src="/resources/cake/js/bootstrap.min.js"></script>
@@ -265,4 +194,3 @@
 	
 
 </body>
-</html>

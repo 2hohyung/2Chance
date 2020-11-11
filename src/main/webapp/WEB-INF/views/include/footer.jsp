@@ -85,121 +85,8 @@
 </head>
 
 <body>
-<!-- Header Section Begin -->
-	<header class="header">
-		<div class="header__top">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="header__top__inner">
 
-							<div class="header__logo">
-								<a href="/main/main"><img
-									src="/resources/cake/img/icon/2cc.jpg" alt="홈으로"></a>
-							</div>
-							<div class="header__top__right">
-								<div class="header__top__right__links">
-									<a href="#" class="search-switch"><img
-										src="/resources/cake/img/icon/search.png" alt="검색"></a> <a
-										href="#"><img src="/resources/cake/img/icon/heart.png"
-										alt="관심목록"></a>
-								</div>
-								<div class="header__top__right__cart">
-									<a href="#"><img src="/resources/cake/img/icon/cart.png"
-										alt=""> <span>0</span></a>
-									<div class="cart__price">
-										Point: <span>300,000</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="canvas__open">
-					<i class="fa fa-bars"></i>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<nav class="header__menu mobile-menu">
-						<ul>
-							<li class="active"><a href="./index.html">Home</a></li>
-							<li><a href="#">쇼핑하기</a>
-								<ul class="dropdown">
-									<li><a href="./shop-details.html">상품상세</a></li>
-									<li><a href="./shoping-cart.html">관심목록</a></li>
-									<li><a href="./checkout.html">구매하기</a></li>
-									<li><a href="./wisslist.html">관심상품</a></li>
-								</ul></li>
-							<li><a href="./index.html">내상품올리기</a></li>
-							<li><a href="#">마이페이지</a>
-								<ul class="dropdown">
-									<sec:authorize access="isAnonymous()">
-										<li><a href="/customLogin">로그인</a></li>
-									</sec:authorize>
-									<sec:authorize access="isAuthenticated()">
-										<li><a href="/customLogout">로그아웃</a></li>
-									</sec:authorize>
-									<li><a href="/myPage/myPage">마이페이지</a></li>
-									<li><a href="/inquiry/inquiry">1:1 문의</a></li>
-									<li><a href="/board/list">공지사항</a>
-								</ul></li>
-
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- Header Section End -->
-	
-<!--  login section start -->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-md-offset-4">
-				<div class="login-panel panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title" style="font-weight: 900;">Who's next? 2-Chance</h3>
-					</div>
-					<div class="panel-body">
-						<form role="form" method='post' action="/login">
-							<fieldset>
-								<div class="form-group">
-									<input class="form-control" placeholder="user id"
-										name="username" type="text" autofocus>
-								</div>
-								<div class="form-group">
-									<input class="form-control" placeholder="Password"
-										name="password" type="password" value="">
-								</div>
-								<div class="checkbox">
-									<label><input name="remember-me" type="checkbox">remember id</label>
-								</div>
-								<!-- Change this to a button or input when using this as a form -->
-								<a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
-								<br>
-								<p>Do you want to join now?</p>
-								<a href="index.html" class="btn btn-lg btn-success btn-block">Join
-									us</a>
-							</fieldset>
-							
-							<input type="hidden" name="${_csrf.parameterName }"
-								value="${_csrf.token }" />
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-			<br>
-			<br>
-			<br>
-	
-	<!-- login section end -->
-	
-	<!-- Footer Section Begin -->
+<!-- Footer Section Begin -->
 	<footer class="footer set-bg"
 		data-setbg="/resources/cake/img/footer-bg.jpg">
 
@@ -239,7 +126,7 @@
 	
 	<!-- Cake Js Plugins end -->
 
-	<!-- login js start -->
+	<!-- login/logout js start -->
 	<!-- jQuery -->
 	<script src="/resources/vendor/jquery/jquery.min.js"></script>
 
@@ -261,8 +148,7 @@
 		});
 	</script>
 	
-	<!-- login js end -->
-	
+	<!-- login/logout js end -->
 
 </body>
 </html>
