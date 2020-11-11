@@ -28,5 +28,15 @@ public class TestController {
 	public void hoTest() {
 		
 	}
+	
+	@GetMapping("hoTest2")
+	public void hoTest2() {
+		
+	}
+	
+	@GetMapping("hoTest3")
+	public void hoTest3() {
+		
+	}
 	//test
 }

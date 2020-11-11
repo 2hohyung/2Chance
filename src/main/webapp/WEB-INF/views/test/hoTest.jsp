@@ -5,11 +5,12 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib uri="http://www.springframework.org/security/tags"
 	prefix="sec"%>
+	<%@include file="../include/header.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>이호형 테스트 뷰 입니다.</title>
+<title>슬라이드</title>
 <style>
 	#content{
 		padding: 30px;
@@ -34,8 +35,9 @@
 </head>
 
 <body>
-	<h1>테스트 뷰 입니다.</h1>
-
+	<h1><a href="/test/hoTest2">QuickMenu</a></h1>
+	<h1><a href="/test/hoTest3">LikeFill</a></h1>
+	
 	<div id="content">
 		<div id="bigImages">
 			<img id="big" src="../resources/testimg/나로.jpg">
@@ -67,4 +69,6 @@ function changepic(){
 }
 });
 </script>
+
+<%@include file="../include/footer.jsp"%>
 </html>

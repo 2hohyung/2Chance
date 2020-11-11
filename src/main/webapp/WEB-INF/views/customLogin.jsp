@@ -180,13 +180,13 @@
 								<!-- Change this to a button or input when using this as a form -->
 								<a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
 								<br>
+								<input type="hidden" name="${_csrf.parameterName }"
+								value="${_csrf.token }" />
 								<p>Do you want to join now?</p>
 								<a href="index.html" class="btn btn-lg btn-success btn-block">Join
 									us</a>
 							</fieldset>
 							
-							<input type="hidden" name="${_csrf.parameterName }"
-								value="${_csrf.token }" />
 						</form>
 					</div>
 				</div>
