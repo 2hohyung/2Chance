@@ -679,6 +679,7 @@
 	</section>
 	<!-- Product Section End -->
 
+	<!-- quickmenu -->
 	<div id="accordian">
 		<ul>
 			<li class="quickmenu">
@@ -690,23 +691,23 @@
 				<ul class="quick_2">
 					<li><a
 						href="http://mysimseokhs.cafe24.com/food/regi/login.php"><img
-							src="../resources/testimg/루미너스.jpg"
+							src="/resources/testimg/likegoods.PNG"
 							alt="#" style="width: 90px;"></a></li>
 					<li><a href="https://simseokhs.uriweb.kr/80"><img
-							src="../resources/testimg/데슬.jpg"
+							src="/resources/testimg/lastestgoods.PNG"
 							alt="" style="width: 90px;"></a></li>
 					<li><a href="https://simseokhs.uriweb.kr/29"><img
-							src="../resources/testimg/호영.jpg"
+							src="/resources/testimg/order.PNG"
 							alt="" style="width: 90px;"></a></li>
 				</ul>
 			</li>
 			<li>
 			<li><a href="#doz_header"><img
-					src="../resources/testimg/팬텀.jpg"
+					src="/resources/cake/icon/login.PNG"
 					alt="" style="width: 90px;"></a></li>
 		</ul>
 	</div>
-	
+	<!-- quickmenu end -->
 	
 
 	<!-- Footer Section Begin -->
@@ -757,6 +758,8 @@
 	<script src="/resources/cake/js/owl.carousel.min.js"></script>
 	<script src="/resources/cake/js/jquery.nicescroll.min.js"></script>
 	<script src="/resources/cake/js/main.js"></script>
+	
+	<!-- 이부분은 퀵메뉴입니다 -->
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("#accordian li .top_btn").click(function() {
