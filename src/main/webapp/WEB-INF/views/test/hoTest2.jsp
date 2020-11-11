@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>사이드퀵메뉴</title>
+<title>사이드퀵메뉴/Like색깔변동</title>
 <style>
 #accordian {
 	position: fixed;
@@ -30,17 +30,17 @@
 	padding-left: 0 !important;
 }
 </style>
-<style>
+<!-- <style>
 	body {
-  padding: 5em;
+  padding: 100em;
 }
-</style>
+</style> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-	
-	<button type="submit" class="btn btn-custom btn-sm liketoggle" name="like"><span>Like</span> <i class="fas fa-heart"></i></button>
+	<!-- <i class="fas fa-heart"></i> -->
+	<button type="submit" class="btn btn-custom btn-sm liketoggle" name="like"><span>🤍</span> </button>
 	<p>
 	  
 	</p>
@@ -90,9 +90,9 @@
 	<script>
 	$(document).ready(function(){
 	$(".liketoggle").click(function() {
-		   $(this).find("i").toggleClass("fas far");
+		  /*  $(this).find("i").toggleClass("fas far"); */
 		   $(this).find("span").text(function(i, v) {
-		     return v === 'Like' ? 'Unlike' : 'Like'
+		     return v === '🤍' ? '🖤' : '🤍'
 		   });
 		 });
 	});
