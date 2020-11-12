@@ -70,8 +70,15 @@
   bottom: 20px;
   right: 20px;
   display: none;
+  background-color: #f08632;
+  border-color: #f08632;
+}
+#scroll-to-top:hover{
+	background-color: #111111;
+	border-color: #111111;
 }	
 	</style>
+	
 	<style>
 #accordian {
 	position: fixed;
