@@ -97,7 +97,7 @@
 <br>
 <div id = "bottomMargin" class="row">
 
-	<div class="col-lg-12">
+	<div class="container">
 		<div class="column">
 			<div id="smallTableTitle">
 				<label>1 : 1 친절상담</label>
