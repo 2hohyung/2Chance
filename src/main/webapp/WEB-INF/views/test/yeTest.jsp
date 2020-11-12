@@ -10,13 +10,22 @@
 <title>배예진 테스트 뷰 입니다.</title>
 </head>
 
-<script>
-	$(document).ready(function(){
-		
-	});
-</script>
 <body>
 	<h1> 테스트 뷰 입니다.</h1>
+	
+	<div class="row">
+   <div class="col-lg-12">
+   	<a href="/scrolltotop" class="scroll-to-top" >scroll</a>
+   </div>
+</div>
+
+<script>
+	$(document).ready(function(){
+		$(".scroll-to-top").on("click", function(e){
+			self.location = "/scrolltotop";
+		});
+	});
+</script>
 	
 </body>
 
