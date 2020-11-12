@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
+<%@include file="../include/header.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,5 +30,5 @@
 	
 </body>
 
-
+<%@include file="../include/footer.jsp"%>
 </html>

@@ -5,6 +5,7 @@
 <%@ taglib uri="http://www.springframework.org/security/tags"
 	prefix="sec"%>
 <%@include file="./include/header.jsp"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -136,4 +137,5 @@ tvN 드라마 중에서 가장 최초로 가변 화면비를 사용한 작품이
 	<!-- Scroll to Top  end -->
 	</script>
 </body>
+<%@include file="./include/footer.jsp"%>
 </html>
