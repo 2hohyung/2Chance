@@ -146,6 +146,12 @@
 									<li><a href="/inquiry/inquiry">1:1 문의</a></li>
 									<li><a href="/board/list">공지사항</a>
 								</ul></li>
+								<li><a href="#">TestPage</a>
+								<ul class="dropdown">
+									<li><a href="/test/hakTest">학영 테스트</a></li>
+									<li><a href="/test/yeTest">예진 테스트</a></li>
+									<li><a href="/test/hoTest">호형 테스트</a></li>
+							</ul></li>
 
 						</ul>
 					</nav>
