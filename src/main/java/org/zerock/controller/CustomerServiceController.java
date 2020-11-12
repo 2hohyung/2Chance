@@ -10,7 +10,7 @@ import lombok.extern.log4j.Log4j;
 @RequestMapping("/customerService/")
 @Controller
 @Log4j
-public class customerServiceController {
+public class CustomerServiceController {
 
 	@GetMapping("inquiry")
 	public void inquiry() {

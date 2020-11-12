@@ -17,4 +17,30 @@ public class MyPageController {
 	public void myPage() {
 		
 	}
+	
+	@GetMapping("biddingPage")
+	public void biddingPage() {
+		
+	}
+	
+	@GetMapping("bidPage")
+	public void bidPage() {
+		
+	}
+	
+	@GetMapping("paymentPage")
+	public void paymentPage() {
+		
+	}
+	
+	@GetMapping("noPaymentPage")
+	public void noPaymentPage() {
+		
+	}
+	
+	@GetMapping("usePointPage")
+	public void usePointPage() {
+		
+	}
+	
 }

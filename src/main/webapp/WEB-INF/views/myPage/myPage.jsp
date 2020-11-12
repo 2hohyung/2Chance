@@ -6,18 +6,30 @@
 
 <style>
 #table {
+	width: 95%;
+	margin: auto;
+	text-align: center;
+	border: solid 1px rgba(17, 17, 17, 0.4);
+}
+#small-table{
 	width: 80%;
 	margin: auto;
 	text-align: center;
 	border: solid 1px rgba(17, 17, 17, 0.4);
 }
-
+#bottomMargin{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+#bottomPadding{
+	padding: 0px;
+}
 #tableTitle {
-	width: 80%;
+	width: 95%;
 	margin: auto;
 }
 #smallTableTitle{
-	width: 78%;
+	width: 80%;
 	margin: auto;
 }
 .table>thead>tr>th {
@@ -27,12 +39,12 @@
 .column {
 	float: left;
 	width: 50%;
-	padding: 50px;
+	padding: 0px;
 }
 </style>
 
 <div class="row">
-	<div class="col-lg-12">
+	<div id = "bottomPadding" class="container">
 		<div id="tableTitle">
 			<label>최근 주문목록 <br> _ <br></label>
 		</div>
@@ -83,15 +95,15 @@
 <br>
 <br>
 <br>
-<div class="row">
+<div id = "bottomMargin" class="row">
 
 	<div class="col-lg-12">
 		<div class="column">
 			<div id="smallTableTitle">
 				<label>1 : 1 친절상담</label>
-				<button class='btn btn-default pull-right'>더보기</button>
+				<button class='btn btn-default btn-xs pull-right'>더보기</button>
 			</div>
-			<table id="table" class="table table-hover">
+			<table id="small-table" class="table table-hover">
 				<thead>
 					<tr>
 						<th>질문일자</th>
@@ -120,10 +132,10 @@
 		</div>
 		<div class="column">
 			<div id="smallTableTitle">
-				<label>1 : 1 친절상담</label>
-				<button class='btn btn-default pull-right'>더보기</button>
+				<label>나의 알림이</label>
+				<button class='btn btn-default btn-xs pull-right'>더보기</button>
 			</div>
-			<table id="table" class="table table-hover">
+			<table id="small-table" class="table table-hover">
 				<thead>
 					<tr>
 						<th>질문일자</th>
@@ -152,5 +164,7 @@
 		</div>
 	</div>
 </div>
-
+<br>
+<br>
+<br>
 <%@include file="../include/footer.jsp"%>
