@@ -36,7 +36,7 @@
 
 <body>
 	<h1><a href="/test/hoTest2">QuickMenu</a></h1>
-	<!-- <h1><a href="/test/hoTest3">LikeFill</a></h1> -->
+	<h2><a href="/goods/goodsDetail">GoodsDetail</a></h2>
 	
 	<div id="content">
 		<div id="bigImages">
