@@ -309,6 +309,7 @@ ol {
 -----------------------*/
 .header {
   background: #f08632;
+  height: 162px;
 }
 
 .header__top {
