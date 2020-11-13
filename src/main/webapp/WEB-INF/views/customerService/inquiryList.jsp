@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 
 <%@include file="../include/header.jsp"%>
+<%@include file="customerService-header.jsp"%>
 
 
 <style>
@@ -14,42 +15,36 @@
 #tableTitle {
 	width: 80%;
 	margin: auto;
+	font-size: 16px;
 }
-
+#CountText{
+	font-size: 8px;
+}
+#customerTable{
+	margin-bottom: 40px;
+}
 .table>thead>tr>th {
 	text-align: center;
 }
 
-.row>.container>h1 {
-	text-align: center;
+body {
+	margin: 0px;
 }
 
-.container {
-	padding: 20px 10px;
-}
 </style>
-
-
-<div class="row">
-	<div class="container">
-		<div class="col-12">
-			<h1>Button Group</h1>
-			<div class="btn-group">
-				<button type="button" class="btn btn-primary">Primary</button>
-				<button type="button" class="btn btn-secondary">Secondary</button>
-				<button type="button" class="btn btn-success">Success</button>
-				<button type="button" class="btn btn-danger">Danger</button>
-			</div>
-		</div>
-	</div>
-</div>
-
 
 <!-- 1 : 1 문의 게시판 테이블. -->
 <div class="row">
-	<div class="container">
+	<div id = "customerTable" class="container">
 		<div id="tableTitle">
 			<label>1 : 1 문의 게시판 <br> _ <br></label>
+		</div>
+		<div id="tableTitle">
+			<p id="CountText">1 : 1 친절상담은 문의내용이나 요청사항을 처리해 드리는 질문답변 게시판입니다.<br>
+			최대한 상세히 문의해 주시면 좀 더 정확한 답변을 드릴 수 있습니다.
+				<button class='btn btn-default pull-right'>더보기</button>
+			</p>
+			
 		</div>
 		<table id="table" class="table table-hover">
 			<thead>
@@ -86,13 +81,4 @@
 	</div>
 </div>
 
-<br>
-<br>
-<br>
-
 <%@include file="../include/footer.jsp"%>
-
-
-<script>
-	
-</script>

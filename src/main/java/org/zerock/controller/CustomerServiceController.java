@@ -12,8 +12,8 @@ import lombok.extern.log4j.Log4j;
 @Log4j
 public class CustomerServiceController {
 
-	@GetMapping("inquiry")
-	public void inquiry() {
+	@GetMapping("inquiryList")
+	public void inquiryList() {
 		
 	}
 

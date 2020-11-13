@@ -463,7 +463,7 @@ a {
 								<a href="#">이용안내</a>
 							</p>
 							<p>
-								<a href="#">1 : 1 문의 게시핀</a>
+								<a href="/customerService/inquiryList">1 : 1 문의 게시판</a>
 							</p>
 						</div>
 					</div>
