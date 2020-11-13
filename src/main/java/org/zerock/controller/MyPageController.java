@@ -43,4 +43,13 @@ public class MyPageController {
 		
 	}
 	
+	@GetMapping("reconfirmMember")
+	public void reconfirmMember() {
+		
+	}
+	
+	@GetMapping("removeMember")
+	public void removeMember() {
+		
+	}
 }

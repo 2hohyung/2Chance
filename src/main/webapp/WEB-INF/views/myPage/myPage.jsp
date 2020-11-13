@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 
 <%@include file="../include/header.jsp"%>
-<%@include file="../myPage/myPage-herder.jsp"%>
+<%@include file="../myPage/myPage-header.jsp"%>
 
 <style>
 #table {
