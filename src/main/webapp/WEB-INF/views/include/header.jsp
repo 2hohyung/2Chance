@@ -24,35 +24,35 @@
 	href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
 	rel="stylesheet">
 
-<!-- Css Styles -->
+<!-- Cake Css Styles start -->
 <link rel="stylesheet" href="/resources/cake/css/bootstrap.min.css"
-	type="text/css">
+	type="text/css"><!-- main css의 최소화(mini) -->
 <link rel="stylesheet" href="/resources/cake/css/flaticon.css"
-	type="text/css">
+	type="text/css"><!-- icon site -->
 <link rel="stylesheet" href="/resources/cake/css/barfiller.css"
-	type="text/css">
+	type="text/css"><!-- 어떤page인지 아직 모름 -->
 <link rel="stylesheet" href="/resources/cake/css/magnific-popup.css"
-	type="text/css">
+	type="text/css"><!-- 정확히는 모르겠으나 mainPage -->
 <link rel="stylesheet" href="/resources/cake/css/font-awesome.min.css"
-	type="text/css">
+	type="text/css"><!-- font -->
 <link rel="stylesheet" href="/resources/cake/css/elegant-icons.css"
-	type="text/css">
+	type="text/css"><!-- icon-style -->
 <link rel="stylesheet" href="/resources/cake/css/nice-select.css"
-	type="text/css">
+	type="text/css"><!-- 기본 선택 요소를 사용자 지정 가능한 드롭 다운으로 대체하는 경량 jQuery 플러그인 -->
 <link rel="stylesheet" href="/resources/cake/css/owl.carousel.min.css"
-	type="text/css">
+	type="text/css"><!-- 아름다운 반응 형 슬라이드 슬라이더를 만들 수있는 터치 지원 jQuery 플러그인 -->
 <link rel="stylesheet" href="/resources/cake/css/slicknav.min.css"
-	type="text/css">
+	type="text/css"><!-- nav관련 css-page -->
 <link rel="stylesheet" href="/resources/cake/css/style.css"
-	type="text/css">
+	type="text/css"><!-- 가장 mainCss -->
 	    <!-- Bootstrap Core CSS -->
     <link href="/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- MetisMenu CSS -->
+    	<!-- MetisMenu CSS -->
     <link href="/resources/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- DataTables CSS 
-
+<!-- Cake Css Styles end -->
+    	
+<!--  admin Basic Css start -->
 <!-- Bootstrap Core CSS -->
 <link href="/resources/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
@@ -67,7 +67,9 @@
 <!-- Custom Fonts -->
 <link href="/resources/vendor/font-awesome/css/font-awesome.min.css"
 	rel="stylesheet" type="text/css">
+<!--  admin Basic Css end -->
 
+<!-- button color: 2-chance -->
 <style type="text/css">
 .btn-success {
 	color: #fff;
@@ -79,7 +81,8 @@
 	color: #fff;
 	background-color: #111111;
 	border-color: #111111;
-}
+	
+
 </style>
 
 </head>
@@ -90,9 +93,8 @@
 		<div class="header__top">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12">
+					<div class="col-lg-12"> 
 						<div class="header__top__inner">
-
 							<div class="header__logo">
 								<a href="/main/main"><img
 									src="/resources/cake/img/icon/temlogo.png" alt="홈으로"></a>
@@ -111,9 +113,9 @@
 										Point: <span>300,000</span>
 									</div>
 								</div>
-							</div>
+							</div> 
 						</div>
-					</div>
+					 </div> 
 				</div>
 				<div class="canvas__open">
 					<i class="fa fa-bars"></i>
@@ -161,7 +163,7 @@
 	</header>
 	<!-- Header Section End -->
 	
-		<!-- Cake Js Plugins start -->
+		<!-- Cake Js Plugins start ( 각각 header내용 참조 )-->
 	<script src="/resources/cake/js/jquery-3.3.1.min.js"></script>
 	<script src="/resources/cake/js/bootstrap.min.js"></script>
 	<script src="/resources/cake/js/jquery.nice-select.min.js"></script>
@@ -171,21 +173,21 @@
 	<script src="/resources/cake/js/owl.carousel.min.js"></script>
 	<script src="/resources/cake/js/jquery.nicescroll.min.js"></script>
 	<script src="/resources/cake/js/main.js"></script>
-	
 	<!-- Cake Js Plugins end -->
 
-	<!-- login js start -->
+	
+	<!-- login js start(sb-admin) -->
 	<!-- jQuery -->
-	<script src="/resources/vendor/jquery/jquery.min.js"></script>
+	<script src="/resources/vendor/jquery/jquery.min.js"></script><!-- 가장 기본의 jquery -->
 
 	<!-- Bootstrap Core JavaScript -->
-	<script src="/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/resources/vendor/bootstrap/js/bootstrap.min.js"></script><!-- 가장 기본의 js -->
 
 	<!-- Metis Menu Plugin JavaScript -->
-	<script src="/resources/vendor/metisMenu/metisMenu.min.js"></script>
+	<script src="/resources/vendor/metisMenu/metisMenu.min.js"></script><!-- menu관련 js plugin -->
 
 	<!-- Custom Theme JavaScript -->
-	<script src="/resources/dist/js/sb-admin-2.js"></script>
+	<script src="/resources/dist/js/sb-admin-2.js"></script><!-- admin page's js -->
 
 	<script>
 		$(".btn-success").on("click", function(e) {
