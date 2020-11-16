@@ -12,12 +12,15 @@
 	src="https://images.innisfree.co.kr/resources/common/js/lib/jquery-1.9.1.min.js"
 	type="text/javascript"></script>
 
-
+<!-- 고객센터 FAQ 폰트 관련 CSS -->
 <link rel="stylesheet"
 	href="https://images.innisfree.co.kr/resources/fonts/lite/fonts.css" />
+	
+<!-- 고객센터 FAQ 기본 Common 관련 CSS -->
 <link rel="stylesheet"
 	href="https://images.innisfree.co.kr/resources/web2/css/common.css" />
-
+	
+<!-- 고객센터 FAQ 드롭다운 JS -->
 <script type="text/javascript"
 	src="https://images.innisfree.co.kr/resources/web2/js/ui.js"></script>
 <script type="text/javascript"
