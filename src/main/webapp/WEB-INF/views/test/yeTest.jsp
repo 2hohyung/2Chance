@@ -20,10 +20,24 @@
    </div>
 </div>
 
+<div class="row">
+   <div class="col-lg-12">
+   	<a href="/joinus" class="joinus" >joinus</a>
+   </div>
+</div>
+
 <script>
 	$(document).ready(function(){
 		$(".scroll-to-top").on("click", function(e){
 			self.location = "/scrolltotop";
+		});
+	});
+</script>
+
+<script>
+	$(document).ready(function(){
+		$(".joinus").on("click", function(e){
+			self.location = "/joinus";
 		});
 	});
 </script>

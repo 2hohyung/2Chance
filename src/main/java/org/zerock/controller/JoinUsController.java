@@ -9,8 +9,8 @@ import lombok.extern.log4j.Log4j;
 @RequestMapping("/")
 @Log4j
 @Controller
-public class ScrollController {
-	@GetMapping("joinus")
+public class JoinUsController {
+	@GetMapping("scrolltotop")
 	public void scroll() {
 		
 	}
