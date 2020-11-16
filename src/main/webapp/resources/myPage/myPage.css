@@ -154,3 +154,9 @@ table {
 	padding-bottom: 3px;
 	margin-right: 20px;
 }
+
+/* 점선 보더 / 텍스트 사이즈 */
+.explanation-text {
+	font-size: 4px;
+	border: 1px dashed #999;
+}

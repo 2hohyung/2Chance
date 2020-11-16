@@ -3,35 +3,7 @@
 
 <%@include file="../include/header.jsp"%>
 <%@include file="customerService-header.jsp"%>
-
-
-<style>
-#table {
-	width: 80%;
-	margin: auto;
-	text-align: center;
-}
-
-#tableTitle {
-	width: 80%;
-	margin: auto;
-	font-size: 16px;
-}
-#CountText{
-	font-size: 8px;
-}
-#customerTable{
-	margin-bottom: 40px;
-}
-.table>thead>tr>th {
-	text-align: center;
-}
-
-body {
-	margin: 0px;
-}
-
-</style>
+<link rel = "stylesheet" href = "/resources/myPage/myPage.css">
 
 <!-- 1 : 1 문의 게시판 테이블. -->
 <div class="row">

@@ -43,8 +43,8 @@ body {
 <div class="container">
 	<h1 id = customerTitle>고객센터</h1><br>
 	<nav id="nav-3">
-		<a class="link-3" href="#">FAQ</a> 
-		<a class="link-3" href="#">1:1상담</a>
+		<a class="link-3" href="/customerService/FAQ">FAQ</a> 
+		<a class="link-3" href="/customerService/inquiryList">1:1상담</a>
 		<a class="link-3" href="#">공지사항</a> 
 		<a class="link-3" href="#">이용안내</a>
 	</nav>
