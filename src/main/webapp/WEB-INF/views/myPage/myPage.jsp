@@ -4,44 +4,7 @@
 <%@include file="../include/header.jsp"%>
 <%@include file="../myPage/myPage-header.jsp"%>
 
-<style>
-#table {
-	width: 95%;
-	margin: auto;
-	text-align: center;
-	border: solid 1px rgba(17, 17, 17, 0.4);
-}
-#small-table{
-	width: 80%;
-	margin: auto;
-	text-align: center;
-	border: solid 1px rgba(17, 17, 17, 0.4);
-}
-#bottomMargin{
-	margin-left: 40px;
-	margin-right: 40px;
-}
-#bottomPadding{
-	padding: 0px;
-}
-#tableTitle {
-	width: 95%;
-	margin: auto;
-}
-#smallTableTitle{
-	width: 80%;
-	margin: auto;
-}
-.table>thead>tr>th {
-	text-align: center;
-}
-
-.column {
-	float: left;
-	width: 50%;
-	padding: 0px;
-}
-</style>
+<link rel = "stylesheet" href = "/resources/myPage/myPage.css">
 
 <div class="row">
 	<div id = "bottomPadding" class="container">
@@ -103,7 +66,7 @@
 				<label>1 : 1 친절상담</label>
 				<button class='btn btn-default btn-xs pull-right'>더보기</button>
 			</div>
-			<table id="small-table" class="table table-hover">
+			<table id="smallTable" class="table table-hover">
 				<thead>
 					<tr>
 						<th>질문일자</th>
@@ -135,7 +98,7 @@
 				<label>나의 알림이</label>
 				<button class='btn btn-default btn-xs pull-right'>더보기</button>
 			</div>
-			<table id="small-table" class="table table-hover">
+			<table id="smallTable" class="table table-hover">
 				<thead>
 					<tr>
 						<th>질문일자</th>

@@ -6,29 +6,12 @@
 <%@include file="../include/header.jsp"%>
 <%@include file="../myPage/myPage-header.jsp"%>
 
+<link rel = "stylesheet" href = "/resources/myPage/myPage.css">
 <style>
-#table {
-	width: 98%;
-	margin: auto;
-	text-align: center;
-}
-
-#tableTitle {
-	width: 98%;
-	margin: auto;
-}
-
-#CountText {
-	font-size: 4px;
-}
 
 .explanation-text {
 	font-size: 4px;
 	border: 1px dashed #999;
-}
-
-.table>thead>tr>th {
-	text-align: center;
 }
 </style>
 

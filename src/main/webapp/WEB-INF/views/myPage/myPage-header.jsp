@@ -436,7 +436,7 @@ a {
 						<div class="hub-info">
 							<br>
 							<p class="text-center">
-								<a href="/myPage/reconfirmMember">회원 정보 수정.</a>
+								<a href="/myPage/reconfirmMember">회원 정보 수정</a>
 							</p>
 							<p class="text-center">
 								<a href="/myPage/removeMember">회원 탈퇴</a>

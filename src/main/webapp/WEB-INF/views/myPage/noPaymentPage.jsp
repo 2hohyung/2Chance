@@ -5,28 +5,7 @@
 
 <%@include file="../include/header.jsp"%>
 <%@include file="../myPage/myPage-header.jsp"%>
-
-<style>
-#table {
-	width: 98%;
-	margin: auto;
-	text-align: center;
-}
-
-#tableTitle {
-	width: 98%;
-	margin: auto;
-}
-
-#CountText {
-	font-size: 4px;
-}
-
-.table>thead>tr>th {
-	text-align: center;
-}
-</style>
-
+<link rel = "stylesheet" href = "/resources/myPage/myPage.css">
 <div class="row">
 	<div class="container">
 		<div id="tableTitle">

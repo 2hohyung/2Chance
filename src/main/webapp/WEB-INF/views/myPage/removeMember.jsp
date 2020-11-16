@@ -1,3 +1,5 @@
+<!-- 회원 삭제 페이지 -->
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
@@ -7,120 +9,7 @@
 <input type="hidden" name="reason" value="4" />
 <input type="hidden" name="uid" value="dlgkrdud3" />
 
-<style>
-#tableTitle {
-	width: 98%;
-	margin: auto;
-	font-size: 20px;
-}
-
-#CountText {
-	font-size: 8px;
-}
-
-.indiv_table {
-	width: 100%;
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #CCCCCC;
-}
-
-.indiv_table th {
-	text-align: left;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: 1px solid #F1F1F1;
-	color: #666;
-	background: #F7F7F7;
-	font-weight: bold;
-	letter-spacing: -1px;
-	padding: 10px 0 10px 50px;
-}
-
-.indiv_table td {
-	text-align: left;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: 1px solid #F3F3F3;
-	color: #666;
-	letter-spacing: 0px;
-	padding: 10px 20px;
-}
-
-.indiv_table td.austria {
-	padding: 20px 0 40px 0;
-	text-align: center;
-}
-
-.indiv_table td.retire {
-	padding: 20px 0 20px 50px;
-	font-weight: bold;
-}
-
-.indiv_table td.retire span {
-	font-weight: normal;
-	color: #777;
-	margin-left: 30px;
-}
-
-.indiv_table td.ukraine {
-	min-height: 250px;
-	vertical-align: top;
-	padding: 20px;
-	color: #777;
-	line-height: 17px;
-}
-
-.indiv_table td.serbia {
-	padding: 35px 50px;
-	color: #777;
-	line-height: 17px;
-}
-
-table {
-	border-collapse: collapse;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-.btn_luxemberg {
-	width: 125px;
-	line-height: 40px;
-	border: 1px solid #f08632;
-	background: #f08632;
-	font-size: 14px;
-	font-weight: bold;
-	color: #fff;
-	letter-spacing: -1px;
-}
-
-.btn_rome {
-	width: 125px;
-	line-height: 40px;
-	border: 1px solid #585858;
-	background: #6D6D6D;
-	font-size: 14px;
-	font-weight: bold;
-	color: #fff;
-	letter-spacing: -1px;
-	margin-left: 5px;
-}
-
-.btn_dutch {
-	width: 70px;
-	line-height: 16px;
-	border: 1px solid #C9C9C9;
-	background: #fff;
-	font-size: 11px;
-	color: #888;
-	letter-spacing: -2px;
-	float: right;
-	padding-bottom: 3px;
-	margin-right: 20px;
-}
-</style>
+<link rel = "stylesheet" href = "/resources/myPage/myPage.css">
 
 <div class="row">
 	<div class="container">
