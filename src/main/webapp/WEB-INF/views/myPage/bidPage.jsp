@@ -6,8 +6,14 @@
 <%@include file="../include/header.jsp"%>
 <%@include file="../myPage/myPage-header.jsp"%>
 
-<link rel = "stylesheet" href = "/resources/myPage/myPage.css">
-
+<link rel="stylesheet" href="/resources/myPage/myPage.css">
+<link rel="stylesheet" href="/resources/btn/2Cbtn.css">
+<style>
+.btn-position {
+	margin-top: 30px;
+	margin-left: 10px;
+}
+</style>
 <div class="row">
 	<div class="container">
 		<div id="tableTitle">
@@ -50,6 +56,10 @@
 				</tr>
 			</tbody>
 		</table>
+		 <!-- 삭제 버튼 -->
+		<div class="btn-position">
+			<input type="button" class="btn-delete" value="삭제" onclick="bidDelete()">
+		</div>
 	</div>
 </div>
 <br>
@@ -57,3 +67,14 @@
 <br>
 
 <%@include file="../include/footer.jsp"%>
+
+<script>
+	//유찰목록 삭제확인 스크립트.
+	function bidDelete(){
+		if(confirm("정말로 삭제하시겠습니까?") == true){
+			alert("삭제하였습니다.");
+		}else{
+			return false;
+		}
+	}
+</script>

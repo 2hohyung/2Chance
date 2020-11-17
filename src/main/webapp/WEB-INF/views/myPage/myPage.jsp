@@ -5,6 +5,7 @@
 <%@include file="../myPage/myPage-header.jsp"%>
 
 <link rel = "stylesheet" href = "/resources/myPage/myPage.css">
+<link rel = "stylesheet" href = "/resources/btn/2Cbtn.css">
 
 <div class="row">
 	<div id = "bottomPadding" class="container">
@@ -60,7 +61,7 @@
 		<div class="column">
 			<div id="smallTableTitle">
 				<label>1 : 1 친절상담</label>
-				<button class='btn btn-default btn-xs pull-right' onclick="tagInquiryList()">더보기</button>
+				<input type="button" class="btn-more pull-right" value="..." onclick="tagInquiryList()">
 			</div>
 			<table id="smallTable" class="table table-hover">
 				<thead>
@@ -92,7 +93,7 @@
 		<div class="column">
 			<div id="smallTableTitle">
 				<label>나의 알림이</label>
-				<button class='btn btn-default btn-xs pull-right'>더보기</button>
+				<input type="button" class="btn-more pull-right" value="..." onclick="">
 			</div>
 			<table id="smallTable" class="table table-hover">
 				<thead>
@@ -130,5 +131,6 @@
 
 <script>
 	function tagInquiryList(){
+		self.location = "/customerService/inquiryList"
 	}
 </script>

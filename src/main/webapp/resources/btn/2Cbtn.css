@@ -63,11 +63,25 @@
     
 }
 
+
+/* 등록 */
+.btn-delete {
+    width: 60px;
+    line-height: 20px;
+    color: white;
+    background-color: #f08632;
+    border: 1px solid #e2e2e2;
+}
+.btn-delete:hover{
+	background-color: black;
+    border: 1px solid black;
+}
+
 /* 더보기 버튼 */
 .btn-more {
     font-weight: bold;
     color: black;
-    background-color: white;
+    background-color: #F8F8F8;
     border: 0;
     outline: 0;
 }

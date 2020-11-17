@@ -6,6 +6,7 @@
 <%@include file="../include/header.jsp"%>
 <%@include file="../myPage/myPage-header.jsp"%>
 <link rel = "stylesheet" href = "/resources/myPage/myPage.css">
+<link rel = "stylesheet" href = "/resources/btn/2Cbtn.css">
 
 <div class="row">
 	<div class="container">
@@ -38,6 +39,7 @@
 				<tr>
 					<td>2</td>
 					<td>삼성</td>
+					<td>2020-11-20</td>
 					<td>3년된 구형 삼성 노트북</td>
 					<td>1000000</td>
 					<td>1100000</td>
@@ -45,6 +47,7 @@
 				<tr>
 					<td>3</td>
 					<td>LG</td>
+					<td>2020-11-20</td>
 					<td>3년된 구형 LG 노트북</td>
 					<td>1099999</td>
 					<td>1</td>

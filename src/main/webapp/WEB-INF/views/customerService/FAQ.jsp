@@ -65,6 +65,10 @@
 	background: url('/resources/cake/img/icon/search.png') no-repeat 50% 50%;
 	font-size: 0;
 }
+
+.cusSearch{
+	margin-bottom: 100px;
+}
 </style>
 
 <fieldset class="cusSearch">
