@@ -1,0 +1,148 @@
+/* 사용하고자 하는 버튼의 value 값만 수정하면 된다 */
+
+
+/* 확인버튼 */
+.btn-ok { 
+    width: 125px;
+    line-height: 40px;
+    border: 1px solid #f08632;
+    background-color: #f08632;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: -1px;  
+}
+
+/* 취소버튼 */
+.btn-cancel {
+    width: 125px;
+    line-height: 40px;
+    border: 1px solid black;
+    background-color: black;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+/* 확인버튼 호버*/
+.btn-hover-ok { 
+    width: 125px;
+    line-height: 40px;
+    border: 1px solid #f08632;
+    background-color: #f08632;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: -1px;  
+}
+
+/* 확인버튼 호버*/
+.btn-hover-ok:hover{
+    background-color: black;
+    border: 1px solid black;
+}
+
+
+/* 취소버튼 호버*/
+.btn-hover-cancel {
+    width: 125px;
+    line-height: 40px;
+    border: 1px solid #f08632;
+    background-color: #f08632;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+/* 취소버튼 호버*/
+.btn-hover-cancel:hover{
+    background-color: black;
+    border: 1px solid black;
+    
+}
+
+/* 더보기 버튼 */
+.btn-more {
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border: 0;
+    outline: 0;
+}
+
+/* 목록보기 */
+.btn-list {
+    width: 60px;
+    line-height: 20px;
+    background-color: white;
+    border: 1px solid #e2e2e2;
+}
+
+/* 등록 */
+.btn-regist {
+    width: 60px;
+    line-height: 20px;
+    background-color: white;
+    border: 1px solid #e2e2e2;
+}
+
+/* 로그인 원형 */
+.btn-login {
+    height: 40px;
+    line-height: 38px;
+    padding: 0 40px;
+    border-radius: 40px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    border: 0;
+    outline: 0;
+}
+
+/* 로그아웃 원형 */
+.btn-logout {
+    height: 40px;
+    line-height: 38px;
+    padding: 0 40px;
+    border-radius: 40px;
+    font-size: 14px;
+    background-color: #f08632;
+    color: white;
+    border: 0;
+    outline: 0;
+}
+
+/* 흰버튼 */
+.btn-white {
+    width: 160px;
+    line-height: 40px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: -1px;  
+}
+
+/* 포인트 */
+.btn-point{
+    width: 110px;
+    height: 60px;
+    background-color: #f08632;
+    border: 1px solid #f08632;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: -1px;
+    line-height: 24px;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+}
+
+/* 포인트 호버 효과 포인트 환전/충전 넣을꺼면 빼면됨 */
+.btn-point:hover{
+    background-color: black;
+    border: 1px solid black;
+}

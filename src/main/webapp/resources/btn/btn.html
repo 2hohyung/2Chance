@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="2Cbtn.css" type="text/css">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> 
+    <style>
+        .img-hover {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        </style>
+</head>
+<body>
+    <!-- 사용하고자 하는 버튼의 value 값만 수정하면 된다 -->
+
+    <!-- 확인 -->
+    <input type="button" class="btn-ok" value="확인" onclick="btn()">
+    <br>
+    <br>
+
+    <!-- 취소 -->
+    <input type="button" class="btn-cancel" value="취소" onclick="btn()">
+    <br>
+    <br>
+   
+    <!-- 확인 -->
+    <input type="button" class="btn-hover-ok" value="확인" onclick="btn()">
+    <br>
+    <br>
+    <!-- 취소 -->
+    <input type="button" class="btn-hover-cancel" value="취소" onclick="btn()">
+    <br>
+    <br>
+   
+
+    <!-- 목록보기 -->
+    <input type="button" class="btn-list" value="목록" onclick="btn()">
+    <br>
+    <br>
+
+    <!-- 등록 -->
+    <input type="button" class="btn-regist" value="등록" onclick="btn()">
+    <br>
+    <br>
+
+    <!-- 로그인 버튼 -->
+    <input type="button" class="btn-login" value="로그인" onclick="btn()">
+    <br>
+    <br>
+
+    <!-- 로그아웃 버튼 -->
+    <input type="button" class="btn-logout" value="로그아웃" onclick="btn()">
+    <br>
+    <br>
+
+    <!-- 더보기 버튼 -->
+    <input type="button" class="btn-more" value="..." onclick="btn()">
+    <br>
+    <br>
+   
+    <!-- 흰버튼 -->
+    <input type="button" class="btn-white" value="흰버튼" onclick="btn()">
+
+    <!-- 포인트 환전/충전 -->
+    <input type="button" class="btn-point" value="포인트환전" onclick="btn()">
+    <br>
+    <br>
+
+    <!-- 로그인 / 회원가입 -->
+    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+    <br>
+    <br>
+
+    <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+    <br>
+    <br>
+
+    <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
+    <br>
+    <br>
+
+<br>
+    <br>
+
+    <script>
+
+        function btn(){
+            alert("u");
+        }
+
+    </script>  
+
+</body>
+</html>
