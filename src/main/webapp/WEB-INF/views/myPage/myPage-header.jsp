@@ -379,10 +379,10 @@ a {
 						<div class="hub-info">
 							<br>
 							<p class="text-center">
-								<a href="/myPage/biddingPage">입찰목록</a>
+								<a href="/myPage/biddingList">입찰목록</a>
 							</p>
 							<p class="text-center">
-								<a href="/myPage/bidPage">유찰목록</a>
+								<a href="/myPage/bidList">유찰목록</a>
 							</p>
 						</div>
 					</div>
@@ -397,10 +397,10 @@ a {
 						<div class="hub-info">
 							<br>
 							<p class="text-center">
-								<a href="/myPage/paymentPage">구매 목록</a>
+								<a href="/myPage/paymentList">구매 목록</a>
 							</p>
 							<p class="text-center">
-								<a href="/myPage/noPaymentPage">미결제 목록</a>
+								<a href="/myPage/noPaymentList">미결제 목록</a>
 							</p>
 						</div>
 					</div>
@@ -415,7 +415,7 @@ a {
 						<div class="hub-info">
 							<br>
 							<p class="text-center">
-								<a href="/myPage/usePointPage">포인트 사용내역</a>
+								<a href="/myPage/usePointList">포인트 사용내역</a>
 							</p>
 							<p class="text-center">
 								<a href="#">포인트 충전</a>

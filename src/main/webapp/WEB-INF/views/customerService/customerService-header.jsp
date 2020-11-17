@@ -31,7 +31,7 @@ body {
 }
 
 .link-3:hover {
-	background-color: rgba(17, 17, 17, 1.0);
+	background-color: rgb(17, 17, 17);
 	color: #EEA200;
 	padding: 24px 10px;
 	text-decoration: none;

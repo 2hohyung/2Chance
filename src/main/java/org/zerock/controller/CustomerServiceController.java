@@ -17,6 +17,11 @@ public class CustomerServiceController {
 		
 	}
 	
+	@GetMapping("inquiry")
+	public void inquiry() {
+		
+	}
+	
 	@GetMapping("FAQ")
 	public void FAQ() {
 		

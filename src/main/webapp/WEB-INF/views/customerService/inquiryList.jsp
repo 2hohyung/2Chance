@@ -31,7 +31,7 @@
 				<tr>
 
 					<td>1</td>
-					<td>가나다라마바사아자차카타파하</td>
+					<td><a class = "move" href="/customerService/inquiry">가나다라마바사아자차카타파하</a></td>
 					<td>진행중</td>
 					<td>2020-11-11</td>
 
