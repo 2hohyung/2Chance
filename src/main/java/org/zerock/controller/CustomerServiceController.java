@@ -21,5 +21,15 @@ public class CustomerServiceController {
 	public void FAQ() {
 		
 	}
+	
+	@GetMapping("noticeList")
+	public void noticeList() {
+		
+	}
+	
+	@GetMapping("notice")
+	public void notice() {
+		
+	}
 
 }
