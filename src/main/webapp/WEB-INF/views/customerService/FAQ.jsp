@@ -27,6 +27,9 @@
 	src="https://images.innisfree.co.kr/resources/common/js/jquery.util.js"></script>
 
 <style>
+body{
+	background-color: white !important;
+}
 .cusSearch .inputText {
 	position: relative;
 	width: 580px;
@@ -52,7 +55,7 @@
 	height: 60px;
 	border: 0;
 	font: 20px/1 'notoL';
-	background-color: #F8F8F8;
+	
 }
 
 .cusSearch .btnSearch {
