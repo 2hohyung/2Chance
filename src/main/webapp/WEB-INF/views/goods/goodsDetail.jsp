@@ -97,7 +97,7 @@
 						</ul>
 						<div class="product__details__option">
 
-							<a href="#" class="primary-btn">입찰하기</a>
+							<a href="/goods/biddingPage" class="primary-btn" onclick="window.open(this.href,'팝업창','width=800,height=800'); return false;">입찰하기</a>
 							<button type="submit" class="btn btn-custom btn-sm liketoggle"
 								name="like" onclick="like()">
 								<span>🤍</span>
@@ -406,6 +406,15 @@
 	<script>
 		function like() {
 			alert("관심상품에 추가되었습니다");
+		}
+	</script>
+	<script>
+		function popupOpen(){
+			url = "./test.php";
+			name = "팝업";
+			specs = "width=500, height=400, top=200, left=100, toolbar=no, menubar=no, scrollbars=no, resizable=yes";
+			window.open(url, name, specs);
+			return false;
 		}
 	</script>
 </body>
