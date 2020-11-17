@@ -17,7 +17,6 @@
 <body>
 	<h1><a href="/test/hoTest2">QuickMenu</a></h1>
 	<h1><a href="/goods/goodsDetail">GoodsDetail</a></h1>
-	<input type="button" class="btn-cancel" value="취소">
 	
 </body>
 <%@include file="../include/footer.jsp"%>

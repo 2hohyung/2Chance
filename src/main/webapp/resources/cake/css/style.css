@@ -1736,8 +1736,10 @@ ol {
   padding-bottom: 40px;
 }
 
+/* 관련 상품 사진 크기 관련 */
 .related__products__slider.owl-carousel .col-lg-3 {
-  max-width: 100%;
+  max-width: inherit;
+  min-width: 100%;
 }
 .related__products__slider.owl-carousel .owl-nav button {
   font-size: 30px;
