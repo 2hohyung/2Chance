@@ -14,7 +14,6 @@
 		<table id="table" class="table table-hover">
 			<thead>
 				<tr>
-					<th>선택</th>
 					<th>주문번호</th>
 					<th>상품정보</th>
 					<th>금액</th>
@@ -25,7 +24,6 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td><input type="checkBox" value="체크"></td>
 					<td>111111</td>
 					<td>가나다라마바사아자차카타파하</td>
 					<td>111111</td>
@@ -34,7 +32,6 @@
 					<td>진행중</td>
 				</tr>
 				<tr>
-					<td><input type="checkBox" value="체크"></td>
 					<td>111111</td>
 					<td>가나다라마바사아자차카타파하</td>
 					<td>111111</td>
@@ -43,7 +40,6 @@
 					<td>진행중</td>
 				</tr>
 				<tr>
-					<td><input type="checkBox" value="체크"></td>
 					<td>111111</td>
 					<td>가나다라마바사아자차카타파하</td>
 					<td>111111</td>
@@ -64,7 +60,7 @@
 		<div class="column">
 			<div id="smallTableTitle">
 				<label>1 : 1 친절상담</label>
-				<button class='btn btn-default btn-xs pull-right'>더보기</button>
+				<button class='btn btn-default btn-xs pull-right' onclick="tagInquiryList()">더보기</button>
 			</div>
 			<table id="smallTable" class="table table-hover">
 				<thead>
@@ -131,3 +127,8 @@
 <br>
 <br>
 <%@include file="../include/footer.jsp"%>
+
+<script>
+	function tagInquiryList(){
+	}
+</script>

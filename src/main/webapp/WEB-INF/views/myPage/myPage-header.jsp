@@ -457,7 +457,7 @@ a {
 								<a href="#">공지사항</a>
 							</p>
 							<p>
-								<a href="#">FAQ</a>
+								<a href="/customerService/FAQ">FAQ</a>
 							</p>
 							<p>
 								<a href="#">이용안내</a>

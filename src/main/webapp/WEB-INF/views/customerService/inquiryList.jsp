@@ -14,7 +14,7 @@
 		<div id="tableTitle">
 			<p id="CountText">1 : 1 친절상담은 문의내용이나 요청사항을 처리해 드리는 질문답변 게시판입니다.<br>
 			최대한 상세히 문의해 주시면 좀 더 정확한 답변을 드릴 수 있습니다.
-				<button class='btn btn-default pull-right'>더보기</button>
+				<button class='btn btn-default pull-right'>문의하기</button>
 			</p>
 			
 		</div>

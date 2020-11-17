@@ -5,7 +5,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
 #customerTitle{
-	margin-top: 40px;
+	margin-top: 80px;
 	text-align: center;
 }
 
