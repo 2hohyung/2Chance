@@ -22,6 +22,11 @@ public class CustomerServiceController {
 		
 	}
 	
+	@GetMapping("inquiryModify")
+	public void inquiryModify() {
+		
+	}
+	
 	@GetMapping("FAQ")
 	public void FAQ() {
 		
