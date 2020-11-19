@@ -145,8 +145,8 @@
 										<li><a href="/customLogout">로그아웃</a></li>
 									</sec:authorize>
 									<li><a href="/myPage/myPage">마이페이지</a></li>
-									<li><a href="/inquiry/inquiry">1:1 문의</a></li>
-									<li><a href="/board/list">공지사항</a>
+									<li><a href="/customerService/inquiryList">1:1 문의</a></li>
+									<li><a href="/customerService/noticeList">공지사항</a>
 								</ul></li>
 								<li><a href="#">TestPage</a>
 								<ul class="dropdown">
