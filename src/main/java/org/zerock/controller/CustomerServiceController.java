@@ -22,8 +22,8 @@ public class CustomerServiceController {
 		
 	}
 	
-	@GetMapping("inquiryModify")
-	public void inquiryModify() {
+	@GetMapping("inquiryRegister")
+	public void inquiryRegister() {
 		
 	}
 	
