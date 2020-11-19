@@ -97,7 +97,7 @@
 						</ul>
 						<div class="product__details__option">
 
-							<a href="/goods/biddingPage" class="primary-btn" onclick="window.open(this.href,'팝업창','width=800,height=800'); return false;">입찰하기</a>
+							<a href="/goods/biddingPage" class="primary-btn" onclick="window.open(this.href,'팝업창','width=660,height=600'); return false;">입찰하기</a>
 							<button type="submit" class="btn btn-custom btn-sm liketoggle"
 								name="like" onclick="like()">
 								<span>🤍</span>
