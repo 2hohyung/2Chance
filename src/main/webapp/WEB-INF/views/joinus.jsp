@@ -80,7 +80,7 @@
                                     <div class="checkout__input">
                                         <p>아이디 <span>*</span></p>
                                         <div class="input-group-append">
-                                        <input type="text" name="username" placeholder="영문,숫자 8-15자리 입력" class="checkout__form">
+                                        <input type="text" id="memberid"name="username" placeholder="영문,숫자 8-15자리 입력" class="checkout__form">
                                             <button class="btn btn-success btn-md" type="submit" id="idChkBtn" onclick="confirmId(event)">check</button>
                                           </div>
                                     </div>
@@ -90,13 +90,13 @@
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>비밀번호 <span>*</span></p>
-                                        <input type="password" name="password" placeholder="비밀번호 입력" class="checkout__form" >
+                                        <input type="password" name="password" id="password" placeholder="비밀번호 입력" class="checkout__form" >
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>비밀번호 확인 <span>*</span></p>
-                                        <input type="password" name="password2" placeholder="비밀번호 재입력" class="checkout__form" >
+                                        <input type="password" name="password2" id="password2" placeholder="비밀번호 재입력" class="checkout__form" >
                                     </div>
                                 </div>
                                 
@@ -138,7 +138,7 @@
                                 <div class="col-lg-9">
                                     <div class="checkout__input">
                                         <p>Email <span>*</span></p>
-                                        <input type="text" name="emailaddress" placeholder="이메일주소" class="checkout__form">         
+                                        <input type="text" name="email" placeholder=" ex) aaa@bbb.ccc" class="checkout__form">         
                                     </div>
                                 </div>
                             </div>
@@ -174,15 +174,19 @@
                                 </div>
                             </div>
                             
-                            <div class="checkout__input">
-                                <p>스토어이름<span></span></p>
-                                <input type="text" placeholder="한글, 영문, 숫자, 특수문자 가능" class="checkout__form">
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <div class="checkout__input">
+                                        <p>스토어 이름 <span>*</span></p>
+                                        <div class="input-group-append">
+                                        <input type="text" id="storename"name="username" placeholder="영문,한글,숫자 사용 가능" class="checkout__form">
+                                            <button class="btn btn-success btn-md" type="submit" id="" onclick="confirm(event)">check</button>
+                                          </div>
+                                    </div>
+                                 </div>
                             </div>
                             
-                            <!-- 주소 연습 -->
-                             
-
-
+                            <!-- Daum 주소 Api start -->
 <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
     function sample6_execDaumPostcode() {
@@ -233,7 +237,55 @@
         }).open();
     }
 </script>
-							<!-- 주소 연습 end -->
+							<!-- Daum 주소 Api end -->
+
+<!-- email start -->
+<script>
+function checkMail(email) {
+        //mail이 입력되었는지 확인하기
+        if (!checkExistData(email, "이메일을"))
+            return false;
+        var emailRegExp = /^[A-Za-z0-9_]+[A-Za-z0-9]
+        *[@]{1}[A-Za-z0-9]+[A-Za-z0-9]*[.]{1}[A-Za-z]{1,3}$/;
+        if (!emailRegExp.test(email)) {
+            alert("이메일 형식이 올바르지 않습니다");
+            form.email.value = "";
+            form.email.focus();
+            return false;
+        }
+        return true; //확인이 완료되었을 때
+    }							
+				</script>
+<!-- email end -->	
+
+<!-- password check start -->
+<script>
+function checkPassword(id, password1, password2) {
+        //비밀번호가 입력되었는지 확인하기
+        if (!checkExistData(password1, "비밀번호를"))
+            return false;
+        //비밀번호 확인이 입력되었는지 확인하기
+        if (!checkExistData(password2, "비밀번호 확인을"))
+            return false;
+ 
+        var password1RegExp = /^[a-zA-z0-9]{4,12}$/; //비밀번호 유효성 검사
+        if (!password1RegExp.test(password1)) {
+            alert("비밀번호는 영문 대소문자와 숫자 4~12자리로 입력해야합니다!");
+            form.password1.value = "";
+            form.password1.focus();
+            return false;
+        }
+        //비밀번호와 비밀번호 확인이 맞지 않다면..
+        if (password1 != password2) {
+            alert("두 비밀번호가 맞지 않습니다.");
+            form.password1.value = "";
+            form.password2.value = "";
+            form.password2.focus();
+            return false;
+        }
+</script>
+<!-- password check end -->
+		
 							
                             <div class="checkout__input__checkbox">
                                 <label for="acc">
