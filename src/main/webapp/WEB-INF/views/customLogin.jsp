@@ -5,6 +5,7 @@
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
 <%@include file="./include/header.jsp"%>
 <!DOCTYPE html>
+
 <style type="text/css">
 .btn-success {
 	color: #fff;
@@ -51,7 +52,7 @@
 								<input type="hidden" name="${_csrf.parameterName }"
 								value="${_csrf.token }" />
 								<p>Do you want to join now?</p>
-								<a href="index.html" class="btn btn-lg btn-success btn-block">Join
+								<a href="index.html" class="btn btn-lg btn-success btn-block" id="join">Join
 									us</a>
 							</fieldset>
 							
@@ -95,12 +96,19 @@
 
 	<script>
 		$(".btn-success").on("click", function(e) {
-
 			e.preventDefault();
 			$("form").submit();
-
 		});
 	</script>
+	<!-- 회원가입 페이지로 넘어가기 -->
+
+<script>	
+    $(document).ready(function(){
+     	$("#join").on("click", function(){
+     		location.href="joinus";
+     	});
+    }); 
+</script>
 	
 	<!-- login js end -->
 	
