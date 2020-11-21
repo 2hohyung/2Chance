@@ -56,12 +56,16 @@
 				</tr>
 			</tbody>
 		</table>
+		
 		 <!-- 삭제 버튼 -->
 		<div class="btn-position">
 			<input type="button" class="btn-delete" value="삭제" onclick="bidDelete()">
 		</div>
+		
 	</div>
+	<!-- container -->
 </div>
+ <!-- row -->
 <br>
 <br>
 <br>

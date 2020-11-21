@@ -10,7 +10,13 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
       <id property="userid" column="userid"/>
       <result property="userid" column="userid"/>
       <result property="userpw" column="userpw"/>
+      <result property="userNickname" column="userNickname"/>
       <result property="userName" column="username"/>
+      <result property="userIdentity" column="userIdentity"/>
+      <result property="userGender" column="userGender"/>
+      <result property="userPhone" column="userPhone"/>
+      <result property="userEmail" column="userEmail"/>
+      <result property="userPoint" column="userPoint"/>
       <result property="regDate" column="regdate"/>
       <result property="updateDate" column="updatedate"/>
       
@@ -27,9 +33,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
    
    <select id="read" resultMap="memberMap">
       SELECT 
-         mem.userid, userpw, username, enabled, regdate, updatedate, auth
+         mem.userid, userpw, userNickname, username, userIdentity, userGender,
+         userPhone, userEmail, userPoint, regdate, updatedate, auth
       FROM
-         tbl_member mem LEFT OUTER JOIN tbl_member_auth auth on mem.userid = auth.userid
+         ult_member mem LEFT OUTER JOIN ult_member_auth auth on mem.userid = auth.userid
       WHERE
          mem.userid = #{userid}
    </select>

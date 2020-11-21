@@ -21,7 +21,6 @@
 		<div id="tableTitle">
 			<p id="CountText">총0건의 자료가 조회되었습니다.</p>
 		</div>
-		<!-- Div tableTitle -->
 		<div id="tableTitle">
 			<p class="explanation-text">
 				'내 입찰가'가 '현재가'와 동일하지만, 최고입찰자가 아닌이유는 출품자가 설정한 최저낙찰금액에 도달하지 못한 경우이거나,<br>
@@ -33,7 +32,6 @@
 			</p>
 		</div>
 		<!-- ./Div tableTitle -->
-		<!-- table -->
 		<table id="table" class="table table-hover">
 			<thead>
 				<tr>
@@ -74,7 +72,9 @@
 		</table>
 		<!-- ./table -->
 	</div>
+	<!-- ./container -->
 </div>
+ <!-- ./row -->
 <br>
 <br>
 <br>

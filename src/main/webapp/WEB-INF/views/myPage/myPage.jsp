@@ -51,7 +51,9 @@
 			</tbody>
 		</table>
 	</div>
+	<!-- ./container -->
 </div>
+ <!-- ./row -->
 <br>
 <br>
 <br>
@@ -90,6 +92,7 @@
 				</tbody>
 			</table>
 		</div>
+		<!--  ./column -->
 		<div class="column">
 			<div id="smallTableTitle">
 				<label>나의 알림이</label>
@@ -122,8 +125,10 @@
 				</tbody>
 			</table>
 		</div>
+		<!-- ./column -->
 	</div>
 </div>
+	<!-- ./row -->
 <br>
 <br>
 <br>
