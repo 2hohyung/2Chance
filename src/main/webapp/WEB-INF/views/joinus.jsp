@@ -69,18 +69,18 @@
                             
                             <div class="row">
                                 <div class="col-lg-9">
-                                    <div class="checkout__input">
+                                    <div class="checkout__input" id="name">
                                         <p>이름 <span>*</span></p>
-                                        <input type="text" name="name" placeholder="" class="checkout__form" >
+                                        <input type="text" name="name" placeholder="" class="checkout__form onlyHangul" minlength="2">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-9">
-                                    <div class="checkout__input">
+                                    <div class="checkout__input" id="id">
                                         <p>아이디 <span>*</span></p>
                                         <div class="input-group-append">
-                                        <input type="text" id="memberid"name="username" placeholder="영문,숫자 8-15자리 입력" class="checkout__form">
+                                        <input type="text" id="id"name="username" placeholder="영문,숫자 4-15자리 입력" class="checkout__form onlyAlphabetAndNumber" minlength="4" maxlength="15">
                                             <button class="btn btn-success btn-md" type="submit" id="idChkBtn" onclick="confirmId(event)">check</button>
                                           </div>
                                     </div>
@@ -88,15 +88,15 @@
                             </div>
                             <div class="row">    
                                 <div class="col-lg-6">
-                                    <div class="checkout__input">
+                                    <div class="checkout__input" id="password">
                                         <p>비밀번호 <span>*</span></p>
-                                        <input type="password" name="password" id="password" placeholder="비밀번호 입력" class="checkout__form" >
+                                        <input type="password" name="password" id="password" placeholder="영문,숫자 8-15자리까지 입력 가능" class="checkout__form" minlength="8"maxlength="15">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="checkout__input">
+                                    <div class="checkout__input" id="password2">
                                         <p>비밀번호 확인 <span>*</span></p>
-                                        <input type="password" name="password2" id="password2" placeholder="비밀번호 재입력" class="checkout__form" >
+                                        <input type="password" name="password2" id="password2" placeholder="비밀번호 재입력" class="checkout__form" minlength="8" maxlength="15">
                                     </div>
                                 </div>
                                 
@@ -104,10 +104,10 @@
                             
                             <div class="row">
                                 <div class="col-lg-9">
-                                    <div class="checkout__input">
+                                    <div class="checkout__input" id="phone">
                                         <p>핸드폰번호 <span>*</span></p>
                                         <div class="input-group-append">
-                                        <input type="text" name="phone" placeholder="(-)없이 전체자리 입력" class="checkout__form">
+                                        <input type="text" name="phone" id="phone" placeholder="(-)없이 전체자리 입력" class="checkout__form onlyNumber" minlength="10" maxlength="11">
                                             <button class="btn btn-success btn-md" type="submit">send</button>
                                           </div>
                                     </div>
@@ -115,7 +115,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-9">
-                                    <div class="checkout__input">
+                                    <div class="checkout__input" >
                                         <p>인증번호 <span>*</span></p>
                                         <div class="input-group-append">
                                         <input type="text" name="certiried" placeholder="인증번호 입력" class="checkout__form">
@@ -127,16 +127,16 @@
 
                             <div class="row">
                                 <div class="col-lg-9">
-                                    <div class="checkout__input">
+                                    <div class="checkout__input" id="birthday">
                                         <p>생년월일 <span>*</span></p>
-                                        <input type="text" name="birthday" placeholder="8자리입력 :ex) 19910303 " class="checkout__form">
+                                        <input type="text" name="birthday" placeholder="8자리입력 :ex) 19910303 " class="checkout__form onlyNumber" maxlength="8">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row">  
                                 <div class="col-lg-9">
-                                    <div class="checkout__input">
+                                    <div class="checkout__input" id="email">
                                         <p>Email <span>*</span></p>
                                         <input type="text" name="email" placeholder=" ex) aaa@bbb.ccc" class="checkout__form">         
                                     </div>
@@ -145,7 +145,7 @@
 
                             <div class="row" >    
                                 <div class="col-lg-3">
-                                    <div class="checkout__input">
+                                    <div class="checkout__input" >
                                         <p>주소 <span>*</span></p>
                                         <div class="input-group-append">
                                         <input type="text" id="sample6_postcode" placeholder="우편번호">
@@ -176,10 +176,10 @@
                             
                             <div class="row">
                                 <div class="col-lg-9">
-                                    <div class="checkout__input">
+                                    <div class="checkout__input" id="storename">
                                         <p>스토어 이름 <span>*</span></p>
                                         <div class="input-group-append">
-                                        <input type="text" id="storename"name="username" placeholder="영문,한글,숫자 사용 가능" class="checkout__form">
+                                        <input type="text" id="storename"name="username" placeholder="한글 10글자 까지 가능" class="checkout__form onlyHangul" maxlength="10">
                                             <button class="btn btn-success btn-md" type="submit" id="" onclick="confirm(event)">check</button>
                                           </div>
                                     </div>
@@ -269,27 +269,284 @@ function checkPassword(id, password1, password2) {
             return false;
  
         var password1RegExp = /^[a-zA-z0-9]{4,12}$/; //비밀번호 유효성 검사
-        if (!password1RegExp.test(password1)) {
+        if (!passwordRegExp.test(password)) {
             alert("비밀번호는 영문 대소문자와 숫자 4~12자리로 입력해야합니다!");
-            form.password1.value = "";
-            form.password1.focus();
+            form.password.value = "";
+            form.password.focus();
             return false;
         }
         //비밀번호와 비밀번호 확인이 맞지 않다면..
-        if (password1 != password2) {
+        if (password != password2) {
             alert("두 비밀번호가 맞지 않습니다.");
-            form.password1.value = "";
+            form.password.value = "";
             form.password2.value = "";
             form.password2.focus();
             return false;
         }
 </script>
 <!-- password check end -->
-		
+
+<!-- join function start -->
+<script>
+            $(function(){
+                //모달을 전역변수로 선언
+                var modalContents = $(".modal-contents");
+                var modal = $("#defaultModal");
+                
+                $('.onlyAlphabetAndNumber').keyup(function(event){
+                    if (!(event.keyCode >=37 && event.keyCode<=40)) {
+                        var inputVal = $(this).val();
+                        $(this).val($(this).val().replace(/[^_a-z0-9]/gi,'')); //_(underscore), 영어, 숫자만 가능
+                    }
+                });
+                
+                $(".onlyHangul").keyup(function(event){
+                    if (!(event.keyCode >=37 && event.keyCode<=40)) {
+                        var inputVal = $(this).val();
+                        $(this).val(inputVal.replace(/[a-z0-9]/gi,''));
+                    }
+                });
+            
+                $(".onlyNumber").keyup(function(event){
+                    if (!(event.keyCode >=37 && event.keyCode<=40)) {
+                        var inputVal = $(this).val();
+                        $(this).val(inputVal.replace(/[^0-9]/gi,''));
+                    }
+                });
+                
+                //------- 검사하여 상태를 class에 적용
+                $('#id').keyup(function(event){
+                    
+                    var id = $('#id');
+                    
+                    if($('#id').val()==""){
+                        id.removeClass("has-success");
+                        id.addClass("has-error");
+                    }else{
+                        id.removeClass("has-error");
+                        id.addClass("has-success");
+                    }
+                });
+                
+                $('#password').keyup(function(event){
+                    
+                    var divPassword = $('#password');
+                    
+                    if($('#password').val()==""){
+                        Password.removeClass("has-success");
+                        Password.addClass("has-error");
+                    }else{
+                        Password.removeClass("has-error");
+                        Password.addClass("has-success");
+                    }
+                });
+                
+                $('#password2').keyup(function(event){
+                    
+                    var password2 = $('#password2').val();
+                    var password = $('#password').val();
+                    var Password2 = $('#password2');
+                    
+                    if((passwordCheck=="") || (password!=passwordCheck)){
+                        password2.removeClass("has-success");
+                        password2.addClass("has-error");
+                    }else{
+                        password2.removeClass("has-error");
+                        password2.addClass("has-success");
+                    }
+                });
+                
+                $('#name').keyup(function(event){
+                    
+                    var name = $('#name');
+                    
+                    if($.trim($('#name').val())==""){
+                        Name.removeClass("has-success");
+                        Name.addClass("has-error");
+                    }else{
+                        Name.removeClass("has-error");
+                        Name.addClass("has-success");
+                    }
+                });
+                
+                $('#storename').keyup(function(event){
+                    
+                    var storename = $('#storename');
+                    
+                    if($.trim($('#storename').val())==""){
+                        storename.removeClass("has-success");
+                        storename.addClass("has-error");
+                    }else{
+                        storename.removeClass("has-error");
+                        storename.addClass("has-success");
+                    }
+                });
+                
+                $('#email').keyup(function(event){
+                    
+                    var email = $('#email');
+                    
+                    if($.trim($('#email').val())==""){
+                        email.removeClass("has-success");
+                        email.addClass("has-error");
+                    }else{
+                        email.removeClass("has-error");
+                        email.addClass("has-success");
+                    }
+                });
+                
+                $('#phone').keyup(function(event){
+                    
+                    var phone = $('#phone');
+                    
+                    if($.trim($('#phone').val())==""){
+                        phone.removeClass("has-success");
+                        phone.addClass("has-error");
+                    }else{
+                        phone.removeClass("has-error");
+                        phone.addClass("has-success");
+                    }
+                });
+                
+                
+                //------- validation 검사
+                $( "form" ).submit(function( event ) {
+                    
+                    var provision = $('#provision');
+                    var memberInfo = $('#memberInfo');
+                    var id = $('#id');
+                    var password = $('#password');
+                    var password2 = $('#password2');
+                    var name = $('#name');
+                    var storename = $('#storename');
+                    var email = $('#email');
+                    var phone = $('#phone');
+                    
+                   
+                    
+                    //아이디 검사
+                    if($('#id').val()==""){
+                        modalContents.text("아이디를 입력하여 주시기 바랍니다.");
+                        modal.modal('show');
+                        
+                        id.removeClass("has-success");
+                        id.addClass("has-error");
+                        $('#id').focus();
+                        return false;
+                    }else{
+                        id.removeClass("has-error");
+                        id.addClass("has-success");
+                    }
+                    
+                    //패스워드 검사
+                    if($('#password').val()==""){
+                        modalContents.text("패스워드를 입력하여 주시기 바랍니다.");
+                        modal.modal('show');
+                        
+                        Password.removeClass("has-success");
+                        Password.addClass("has-error");
+                        $('#password').focus();
+                        return false;
+                    }else{
+                        Password.removeClass("has-error");
+                        Password.addClass("has-success");
+                    }
+                    
+                    //패스워드 확인
+                    if($('#password2').val()==""){
+                        modalContents.text("패스워드 확인을 입력하여 주시기 바랍니다.");
+                        modal.modal('show');
+                        
+                        divPassword2.removeClass("has-success");
+                        divPassword2.addClass("has-error");
+                        $('#password2').focus();
+                        return false;
+                    }else{
+                        password2.removeClass("has-error");
+                        password2.addClass("has-success");
+                    }
+                    
+                    //패스워드 비교
+                    if($('#password').val()!=$('#password2').val() || $('#password2').val()==""){
+                        modalContents.text("패스워드가 일치하지 않습니다.");
+                        modal.modal('show');
+                        
+                        password2.removeClass("has-success");
+                        password2.addClass("has-error");
+                        $('#password2').focus();
+                        return false;
+                    }else{
+                        password2.removeClass("has-error");
+                        password2.addClass("has-success");
+                    }
+                    
+                    //이름
+                    if($('#name').val()==""){
+                        modalContents.text("이름을 입력하여 주시기 바랍니다.");
+                        modal.modal('show');
+                        
+                        Name.removeClass("has-success");
+                        Name.addClass("has-error");
+                        $('#name').focus();
+                        return false;
+                    }else{
+                        Name.removeClass("has-error");
+                        Name.addClass("has-success");
+                    }
+                    
+                    //별명
+                    if($('#storename').val()==""){
+                        modalContents.text("별명을 입력하여 주시기 바랍니다.");
+                        modal.modal('show');
+                        
+                        storename.removeClass("has-success");
+                        storename.addClass("has-error");
+                        $('#storename').focus();
+                        return false;
+                    }else{
+                        storename.removeClass("has-error");
+                        storename.addClass("has-success");
+                    }
+                    
+                    //이메일
+                    if($('#email').val()==""){
+                        modalContents.text("이메일을 입력하여 주시기 바랍니다.");
+                        modal.modal('show');
+                        
+                        divEmail.removeClass("has-success");
+                        divEmail.addClass("has-error");
+                        $('#email').focus();
+                        return false;
+                    }else{
+                        Email.removeClass("has-error");
+                        Email.addClass("has-success");
+                    }
+                    
+                    //휴대폰 번호
+                    if($('#phone').val()==""){
+                        modalContents.text("휴대폰 번호를 입력하여 주시기 바랍니다.");
+                        modal.modal('show');
+                        
+                        phone.removeClass("has-success");
+                        phone.addClass("has-error");
+                        $('#phone').focus();
+                        return false;
+                    }else{
+                        phone.removeClass("has-error");
+                        phone.addClass("has-success");
+                    }
+                    
+                
+                });
+                
+            });
+            
+        </script>
+<!-- join function end -->		
 							
                             <div class="checkout__input__checkbox">
                                 <label for="acc">
-                                    회원가입을 하시겠습니까? 
+                                    위 정보로 회원가입을 합니다.
                                     <input type="checkbox" id="acc">
                                     <span class="checkmark"></span>
                                 </label>

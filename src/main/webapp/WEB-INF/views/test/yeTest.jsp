@@ -26,6 +26,12 @@
    </div>
 </div>
 
+<div class="row">
+   <div class="col-lg-12">
+   	<a href="/text00" class="text00" >test00</a>
+   </div>
+</div>
+
 <script>
 	$(document).ready(function(){
 		$(".scroll-to-top").on("click", function(e){
@@ -38,6 +44,14 @@
 	$(document).ready(function(){
 		$(".joinus").on("click", function(e){
 			self.location = "/joinus";
+		});
+	});
+</script>
+
+<script>
+	$(document).ready(function(){
+		$(".text00").on("click", function(e){
+			self.location = "/text00";
 		});
 	});
 </script>
