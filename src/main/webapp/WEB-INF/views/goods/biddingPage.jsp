@@ -41,7 +41,8 @@ td {
 .btn-bid {
 	height: 40px;
 	line-height: 38px;
-	padding-left: 300px
+	padding: 0 40px;
+	text-align: center;
 	border-radius: 40px;
 	font-size: 14px;
 	background-color: black;
@@ -104,9 +105,10 @@ td {
 			</tr>
 		</table>
 	</table>
-	<div class="ac mtxs">
+	<div class="ac_mtxs" style="text-align:center; margin-top:17px;">
 		<input type="button" class="btn-bid" value="입찰하기" onclick="btn()">
 	</div>
+	
 	<div class="mt bid_ul">
 		<ul>
 			<li>경매 낙찰 건을 주문 취소하시면 구매거부가 되어 경매 패널티가 1점 부여됩니다.</li>
