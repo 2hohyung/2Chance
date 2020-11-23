@@ -11,10 +11,10 @@
 
 
 <style>
-
-#noticeTable{
+#noticeTable {
 	margin-bottom: 100px;
 }
+
 body {
 	background-color: white !important;
 }
@@ -78,17 +78,20 @@ body {
 <br>
 <br>
 <br>
-<div id = noticeTable class="row">
-	<div id = "customerTable" class="container">
+<div id=noticeTable class="row">
+	<div id="customerTable" class="container">
 		<table id="table" class="table table-hover">
 			<tbody>
 				<c:forEach items="${getNoticeList}" var="nList">
-				<tr>
-					<td style = "text-align: center"><c:out value="${nList.nno}"/></td>
-					<td style = "text-align: center"><a class = "move" href="/customerService/notice">
-						<c:out value="${nList.title}"/></a></td>
-					<td style = "text-align: right"><fmt:formatDate pattern="yyyy-MM-dd" value="${nList.regDate}"/></td>
-				</tr>
+					<tr>
+						<td style="text-align: center"><c:out value="${nList.nno}" /></td>
+						<td style="text-align: center"><a
+							href='/customerService/notice?nno=<c:out value="${nList.nno}"/>'>
+								<c:out value="${nList.title}" />
+						</a></td>
+						<td style="text-align: right"><fmt:formatDate
+								pattern="yyyy-MM-dd" value="${nList.regDate}" /></td>
+					</tr>
 				</c:forEach>
 			</tbody>
 		</table>
@@ -98,6 +101,9 @@ body {
 <%@include file="../include/footer.jsp"%>
 
 <script>
+	$(document).ready(function(){
+	});
+
 function goSearch() {
 	if (!$('#key').val()) {
 		alert("검색어를 입력해 주세요.");
