@@ -51,6 +51,7 @@ td {
 	outline: 0;
 }
 </style>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
 	<h1 class="f1">
@@ -106,7 +107,7 @@ td {
 		</table>
 	</table>
 	<div class="ac_mtxs" style="text-align:center; margin-top:17px;">
-		<input type="button" class="btn-bid" value="입찰하기" onclick="btn()">
+		<input type="button" class="btn-bid" value="입찰하기" onclick="btnbid()">
 	</div>
 	
 	<div class="mt bid_ul">
@@ -116,4 +117,9 @@ td {
 		</ul>
 	</div>
 </body>
+<script>
+	function btnbid(){
+		swal("Good job!", "You clicked the button!", "success");
+	}
+</script>
 </html>
