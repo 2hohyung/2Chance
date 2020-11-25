@@ -41,7 +41,8 @@ td {
 .btn-bid {
 	height: 40px;
 	line-height: 38px;
-	padding-left: 300px
+	padding: 0 40px;
+	text-align: center;
 	border-radius: 40px;
 	font-size: 14px;
 	background-color: black;
@@ -50,6 +51,7 @@ td {
 	outline: 0;
 }
 </style>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
 	<h1 class="f1">
@@ -104,9 +106,10 @@ td {
 			</tr>
 		</table>
 	</table>
-	<div class="ac mtxs">
-		<input type="button" class="btn-bid" value="입찰하기" onclick="btn()">
+	<div class="ac_mtxs" style="text-align:center; margin-top:17px;">
+		<input type="button" class="btn-bid" value="입찰하기" onclick="btnbid()">
 	</div>
+	
 	<div class="mt bid_ul">
 		<ul>
 			<li>경매 낙찰 건을 주문 취소하시면 구매거부가 되어 경매 패널티가 1점 부여됩니다.</li>
@@ -114,4 +117,9 @@ td {
 		</ul>
 	</div>
 </body>
+<script>
+	function btnbid(){
+		swal("Good job!", "You clicked the button!", "success");
+	}
+</script>
 </html>

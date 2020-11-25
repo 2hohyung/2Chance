@@ -16,7 +16,8 @@
 </head>
 <body>
 	<h1><a href="/test/hoTest2">QuickMenu</a></h1>
-	<h1><a href="/goods/goodsDetail">GoodsDetail</a></h1>
+	<h1><a href="/goods/goodsDetail">상품상세</a></h1>
+	<h1><a href="/goods/interestPage">관싱상품</a></h1>
 	
 </body>
 <%@include file="../include/footer.jsp"%>

@@ -20,4 +20,9 @@ public class GoodsController {
 	public void biddingPage() {
 		
 	}
+	
+	@GetMapping("/interestPage")
+	public void interestPage() {
+		
+	}
 }
