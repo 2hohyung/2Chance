@@ -21,6 +21,17 @@
 .countText{
 	
 }
+
+.inputTitle {
+	border: 1px solid #CCCCCC;
+	width: 345px;
+	height: 23px;
+	line-height: 23px;
+	color: #666;
+	padding: 0 7px;
+	font-size: 12px;
+}
+
  /* 별점 관련 스타일 */
 #star a{ text-decoration: none; color: gray; } 
 #star a.on{ color: red; }
@@ -36,6 +47,17 @@
 }
 .tableContent{
 	padding-left: 20px;
+}
+
+.contentTable{
+	border: solid 1px black;
+}
+
+ /* content / answer 스타일 적용*/
+.pre-style{
+	white-space: pre-line;
+	background-color: #F8F8F8;
+	border: none;
 }
 </style>
 
@@ -58,39 +80,30 @@
 			<table class = contentTable>
 				<tr height="70px">
 					<td class = "contentSubTitle">질문일자</td>
-					<td class = "tableContent">2020-11-19</td>
+					<td class = "tableContent">
+						<fmt:formatDate pattern="yyyy-MM-dd" value="${inquiry.regDate}"/></td>
 				</tr>
 				
 				<tr height="70px">
 					<td class = "contentSubTitle">질문제목</td>
-					<td class = "tableContent">안녕하세요 반가워요 잘있어요 다시만나요</td>
+					<td class = "tableContent"><c:out value="${inquiry.title}"/></td>
 				</tr>
 				
 				<tr height="190px;">
 					<td class = "contentSubTitle">질문내용</td>
-					<td class = "tableContent">
-						아침해가 뜨면 새로운 사람들과 오늘도 보람찬 하루일을 시작하네~<br>
-						아침해가 뜨면 새로운 사람들과 오늘도 보람찬 하루일을 시작하네~<br>
-						아침해가 뜨면 새로운 사람들과 오늘도 보람찬 하루일을 시작하네~<br>
-						아침해가 뜨면 새로운 사람들과 오늘도 보람찬 하루일을 시작하네~<br>
-						아침해가 뜨면 새로운 사람들과 오늘도 보람찬 하루일을 시작하네~<br>
-						아침해가 뜨면 새로운 사람들과 오늘도 보람찬 하루일을 시작하네~<br>
-						아침해가 뜨면 새로운 사람들과 오늘도 보람찬 하루일을 시작하네~<br>
-						아침해가 뜨면 새로운 사람들과 오늘도 보람찬 하루일을 시작하네~<br>
+					<td id="inquiry-content" class = "tableContent">
+						<pre class = "pre-style">
+							<c:out value="${inquiry.content}"/>
+						</pre>
 					</td>
 				</tr>
 				
 				<tr height="190px;">
 					<td class = "contentSubTitle">답변</td>
-					<td class = "tableContent">
-						정상적인 답변이 요구되는 부분입니다. 다시 확인하시고 질문해 주시기 바랍니다.<br>
-						정상적인 답변이 요구되는 부분입니다. 다시 확인하시고 질문해 주시기 바랍니다.<br>
-						정상적인 답변이 요구되는 부분입니다. 다시 확인하시고 질문해 주시기 바랍니다.<br>
-						정상적인 답변이 요구되는 부분입니다. 다시 확인하시고 질문해 주시기 바랍니다.<br>
-						정상적인 답변이 요구되는 부분입니다. 다시 확인하시고 질문해 주시기 바랍니다.<br>
-						정상적인 답변이 요구되는 부분입니다. 다시 확인하시고 질문해 주시기 바랍니다.<br>
-						정상적인 답변이 요구되는 부분입니다. 다시 확인하시고 질문해 주시기 바랍니다.<br>
-						정상적인 답변이 요구되는 부분입니다. 다시 확인하시고 질문해 주시기 바랍니다.<br>
+					<td id = "" class = "tableContent">
+						<pre class = "pre-style">
+							<c:out value="${inquiry.answer}"/>
+						</pre>
 					</td>
 				</tr>
 				
@@ -109,7 +122,9 @@
 				
 				<tr height="70px;">
 					<td class = "contentSubTitle">평가사유</td>
-					<td class = "tableContent"></td>
+					<td class = "tableContent">
+						<input type="text" class="inputTitle" maxlength="100">
+					</td>
 				</tr>
 			</table>
 		</div>
@@ -122,11 +137,17 @@
 
 
 <script>
-
 	$('#star a').click(function(){
 		$(this).parent().children("a").removeClass("on");
 		$(this).addClass("on").prevAll("a").addClass("on");
 		console.log($(this).attr("vaule"));
 	});
 	
+	$(document).ready(function(){
+		var contentURI = ("#inquiry-content");
+		var contentTemp = '<c:out value="${inquiry.content}"/>';
+		contentTemp = contentTemp.replaceAll("\r\n", "<br>");
+		contentTemp = "<p>" + contentTemp + "<p>";
+		contentURI.html(contentTemp);
+	});
 </script>

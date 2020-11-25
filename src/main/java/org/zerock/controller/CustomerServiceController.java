@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.zerock.domain.Criteria;
 import org.zerock.service.FAQService;
+import org.zerock.service.InquiryService;
 import org.zerock.service.NoticeService;
 
 import lombok.AllArgsConstructor;
@@ -22,15 +23,19 @@ public class CustomerServiceController {
 
 	private NoticeService noticeService;
 	private FAQService faqService;
+	private InquiryService inquiryService;
+	
 	
 	@GetMapping("inquiryList")
-	public void inquiryList() {
-		
+	public void inquiryList(Model model) {
+		log.info("inquiryList..............!!!");
+		model.addAttribute("iqList", inquiryService.getList());
 	}
 	
 	@GetMapping("inquiry")
-	public void inquiry() {
-		
+	public void inquiry(@RequestParam("uno") Long uno, Model model) {
+		log.info("inquiry...................!!!");
+		model.addAttribute("inquiry", inquiryService.get(uno));
 	}
 	
 	@GetMapping("inquiryRegister")

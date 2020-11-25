@@ -10,7 +10,9 @@ public interface InquiryMapper {
 	
 	public List<InquiryVO> getList();
 	
+	/*
 	public void insert(InquiryVO vo);
 	
-	public int update(InquiryVO vo);
+	public int updateAnswer(InquiryVO vo);
+	*/
 }

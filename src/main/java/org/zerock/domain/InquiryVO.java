@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 public class InquiryVO {
 	
-	private String uno;			//식별 번호
+	private Long uno;			//식별 번호
 	private String userId;		//유저 아이디
 	private String title;		//제목
 	private String content;		//질문
